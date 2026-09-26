@@ -1,0 +1,21 @@
+{
+  "name": "om-jewellers",
+  "version": "1.0.0",
+  "description": "Om Jewellers - Luxury Bridal & Heritage Fine Jewellery Redesign",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve . -p 3000",
+    "start": "npx -y serve . -p 3000",
+    "build": "echo 'Static site ready for deployment'"
+  },
+  "keywords": [
+    "om-jewellers",
+    "luxury-jewellery",
+    "bridal-heritage",
+    "mumbai",
+    "atelier-custom",
+    "vercel"
+  ],
+  "author": "Om Jewellers",
+  "license": "UNLICENSED"
+}

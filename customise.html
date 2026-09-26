@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customise Your Jewellery | Om Jewellers Bespoke Atelier</title>
+  <meta name="description" content="Co-create your dream bespoke engagement ring, bridal polki choker, or heirloom solitaire with Om Jewellers Master Craftsmen. 3D CAD visualization, certified diamonds, and BIS 916 gold."/>
+  <meta name="keywords" content="Custom Jewellery Mumbai, Bespoke Bridal Jewellery, Custom Solitaire Ring, Om Jewellers Atelier, Polki Choker, Remake Gold"/>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida/AEtjO1Vm0kFwPfchjD2RQqRYSGcryvCtyJwUEM34F8YL4aH8cCtCg8vFIuvCUOnJGbPQ4Y6vmI4hhKl4thNGcWzW3G9NQiSgDv7waTXh-50RCHfD4MdAnNMpIYI-k2r_K0TQ6yyAoZ526ZKeVB68C8tzBrsO84E___pG2rUR9mfYPx_8Dc1im18q-eueh0yxLUAxZWADPP1JX-DYsJ7Jo7CLQ0yID3mu1gLoKIfOxGOOtHCj7bNmavDUG8gCnA"/>
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF7F2;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A059;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5B1318;
+    }
+  </style>
+
+  <!-- Tailwind CSS via official CDN with exact design system extension -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "royal-maroon-dark": "#3D0C10",
+            "royal-maroon-base": "#5B1318",
+            "royal-maroon-soft": "#7E1F26",
+            "canvas-cream": "#FAF7F2",
+            "surface-cream-light": "#FDFBF7",
+            "surface-champagne-subtle": "#F6F0E6",
+            "surface-container-low": "#f6f3ee",
+            "surface-container": "#f0ede9",
+            "surface-container-high": "#ebe8e3",
+            "surface-container-highest": "#e5e2dd",
+            "surface-container-lowest": "#ffffff",
+            "surface": "#fcf9f4",
+            "surface-dim": "#dcdad5",
+            "surface-bright": "#fcf9f4",
+            "surface-variant": "#e5e2dd",
+            "surface-tint": "#9a4344",
+            "gold-radiant": "#D4AF37",
+            "gold-antique": "#C5A059",
+            "gold-light-border": "rgba(212, 175, 55, 0.28)",
+            "gold-shimmer-highlight": "#FFF9E6",
+            "gold-linear-start": "#FBF8F0",
+            "gold-linear-end": "#F3EAD7",
+            "text-primary": "#241A18",
+            "text-muted": "#6C625D",
+            "on-surface": "#1c1c19",
+            "on-surface-variant": "#554242",
+            "outline": "#887271",
+            "outline-variant": "#dbc0bf",
+            "primary": "#3d0007",
+            "primary-container": "#5b1318",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#de7878",
+            "primary-fixed": "#ffdad8",
+            "primary-fixed-dim": "#ffb3b1",
+            "on-primary-fixed": "#400007",
+            "on-primary-fixed-variant": "#7c2c2e",
+            "secondary": "#735c00",
+            "secondary-container": "#fed65b",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#745c00",
+            "secondary-fixed": "#ffe088",
+            "secondary-fixed-dim": "#e9c349",
+            "on-secondary-fixed": "#241a00",
+            "on-secondary-fixed-variant": "#574500",
+            "tertiary": "#241700",
+            "tertiary-container": "#3e2b00",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#b4914b",
+            "tertiary-fixed": "#ffdea5",
+            "tertiary-fixed-dim": "#e9c176",
+            "on-tertiary-fixed": "#261900",
+            "on-tertiary-fixed-variant": "#5d4201",
+            "inverse-surface": "#31302d",
+            "inverse-on-surface": "#f3f0eb",
+            "inverse-primary": "#ffb3b1",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "on-error-container": "#93000a",
+            "background": "#fcf9f4",
+            "on-background": "#1c1c19"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "gutter-sm": "0.75rem",
+            "margin": "1.25rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.25rem",
+            "space-2xl": "3.5rem",
+            "margin-lg": "1.75rem"
+          },
+          fontFamily: {
+            "display-hero": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "subheading": ["Playfair Display", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-eyebrow": ["Plus Jakarta Sans", "sans-serif"],
+            "label-button": ["Plus Jakarta Sans", "sans-serif"],
+            "label-price": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          fontSize: {
+            "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "0em", fontWeight: "600" }],
+            "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "0.01em", fontWeight: "500" }],
+            "headline-sm": ["18px", { lineHeight: "26px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "display-hero": ["38px", { lineHeight: "46px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "subheading": ["16px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "400" }],
+            "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+            "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+            "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+            "label-eyebrow": ["11px", { lineHeight: "16px", letterSpacing: "0.18em", fontWeight: "700" }],
+            "label-button": ["13px", { lineHeight: "18px", letterSpacing: "0.08em", fontWeight: "600" }],
+            "label-price": ["15px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "700" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-royal-maroon-base selection:text-surface-cream-light">
+
+  <!-- ========================================================================= -->
+  <!-- LUXURY FIXED HEADER WITH GOLD RATES TICKER AND RESPONSIVE NAVIGATION      -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 w-full z-50 shadow-md">
+    <!-- Top Gold Rate Ticker Bar -->
+    <div class="w-full bg-[#FFF9F0] border-b border-[#F0E6D8] py-2 px-margin text-center">
+      <div class="max-w-7xl mx-auto flex items-center justify-center">
+        <p class="font-headline-sm text-[13px] md:text-[18px] text-[#5B1318] tracking-wide font-normal">
+          Today's Gold Rate &nbsp;|&nbsp; 
+          <span class="font-body-sm text-[12px] md:text-[14px] uppercase text-[#735C00]">22K :</span> 
+          <span class="font-semibold text-[#5B1318]">Rs.13,910 per gm</span> &nbsp;|&nbsp; 
+          <span class="font-body-sm text-[12px] md:text-[14px] uppercase text-[#735C00]">18K :</span> 
+          <span class="font-semibold text-[#5B1318]">Rs.11,795 per gm</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="w-full bg-[#822B2A] text-surface-cream-light py-3 px-margin border-b border-[#5E1B1B]">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-open-btn" aria-label="Open Navigation Menu" class="md:hidden p-2 text-surface-cream-light hover:text-gold-radiant transition-colors flex items-center justify-center rounded-lg hover:bg-white/10">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+
+        <!-- Desktop Navigation Links Left -->
+        <nav class="hidden md:flex items-center gap-8 font-body-md text-[15px]">
+          <a class="text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html">About us</a>
+          <a class="flex items-center gap-1 cursor-pointer text-surface-cream-light hover:text-gold-radiant transition-colors" href="index.html#collections-section">
+            <span class="font-medium">Collections</span>
+            <span class="material-symbols-outlined text-[18px]">expand_more</span>
+          </a>
+          <a class="flex items-center gap-1 cursor-pointer text-gold-radiant font-semibold" href="customise.html">
+            <span>Atelier Custom</span>
+            <span class="text-[10px] bg-gold-radiant text-royal-maroon-dark px-1.5 py-0.2 rounded font-bold uppercase ml-1">Bespoke</span>
+          </a>
+          <a class="flex items-center gap-1 cursor-pointer text-surface-cream-light hover:text-gold-radiant transition-colors" href="#custom-form-root">
+            <span class="font-medium">Customer Service</span>
+            <span class="material-symbols-outlined text-[18px]">expand_more</span>
+          </a>
+        </nav>
+
+        <!-- Brand Logo -->
+        <div class="flex-shrink-0 mx-auto md:mx-0">
+          <a class="block" href="index.html" aria-label="Om Jewellers Homepage">
+            <img alt="Om Jewellers Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vm0kFwPfchjD2RQqRYSGcryvCtyJwUEM34F8YL4aH8cCtCg8vFIuvCUOnJGbPQ4Y6vmI4hhKl4thNGcWzW3G9NQiSgDv7waTXh-50RCHfD4MdAnNMpIYI-k2r_K0TQ6yyAoZ526ZKeVB68C8tzBrsO84E___pG2rUR9mfYPx_8Dc1im18q-eueh0yxLUAxZWADPP1JX-DYsJ7Jo7CLQ0yID3mu1gLoKIfOxGOOtHCj7bNmavDUG8gCnA"/>
+          </a>
+        </div>
+
+        <!-- Navigation Right (Stores, Featured, Search) -->
+        <div class="flex items-center gap-4 md:gap-6">
+          <div class="hidden md:flex items-center gap-6 font-body-md text-[15px]">
+            <a class="text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html#boutiques-section">Stores</a>
+            <a class="text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html#campaign-media-section">Featured</a>
+          </div>
+          
+          <div class="relative flex items-center">
+            <input class="w-32 sm:w-44 md:w-56 bg-transparent border border-surface-cream-light/60 rounded-full pl-4 pr-9 py-1.5 font-body-sm text-[13px] md:text-[14px] text-surface-cream-light placeholder:text-surface-cream-light/80 focus:outline-none focus:border-gold-radiant focus:ring-1 focus:ring-gold-radiant transition-all" placeholder="Search..." type="text"/>
+            <button aria-label="Search" class="material-symbols-outlined text-[18px] text-surface-cream-light absolute right-3 hover:text-gold-radiant transition-colors">search</button>
+          </div>
+
+          <a href="https://wa.me/912268258888" target="_blank" aria-label="Chat on WhatsApp" class="md:hidden p-1.5 text-gold-radiant hover:text-surface-cream-light transition-colors">
+            <span class="material-symbols-outlined text-[24px]">chat</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MOBILE DRAWER NAVIGATION                                                  -->
+  <!-- ========================================================================= -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0" aria-hidden="true">
+    <div id="mobile-drawer-backdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"></div>
+    <div id="mobile-drawer-panel" class="absolute top-0 left-0 bottom-0 w-[82%] max-w-sm bg-gradient-to-b from-[#3D0C10] via-[#5B1318] to-[#3D0C10] text-surface-cream-light shadow-2xl flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-out z-10 overflow-y-auto">
+      
+      <div class="p-6 border-b border-gold-light-border/30 flex items-center justify-between">
+        <img alt="Om Jewellers Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vm0kFwPfchjD2RQqRYSGcryvCtyJwUEM34F8YL4aH8cCtCg8vFIuvCUOnJGbPQ4Y6vmI4hhKl4thNGcWzW3G9NQiSgDv7waTXh-50RCHfD4MdAnNMpIYI-k2r_K0TQ6yyAoZ526ZKeVB68C8tzBrsO84E___pG2rUR9mfYPx_8Dc1im18q-eueh0yxLUAxZWADPP1JX-DYsJ7Jo7CLQ0yID3mu1gLoKIfOxGOOtHCj7bNmavDUG8gCnA"/>
+        <button id="mobile-menu-close-btn" aria-label="Close Navigation Menu" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-surface-cream-light flex items-center justify-center transition-colors">
+          <span class="material-symbols-outlined text-[22px]">close</span>
+        </button>
+      </div>
+
+      <div class="px-6 py-6 flex flex-col gap-5 font-headline-sm text-[17px]">
+        <a class="mobile-nav-link text-surface-cream-light hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="index.html">
+          <span>Home &amp; Bridal Heritage</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link text-gold-radiant font-semibold flex items-center justify-between py-1 transition-colors border-b border-white/10" href="customise.html">
+          <div class="flex items-center gap-2">
+            <span>Atelier Custom Jewellery</span>
+            <span class="text-[10px] bg-gold-radiant text-royal-maroon-dark px-1.5 py-0.5 rounded font-bold uppercase">Active</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">arrow_forward</span>
+        </a>
+        <a class="mobile-nav-link text-surface-cream-light hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="index.html#collections-section">
+          <span>Signature Collections</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link text-surface-cream-light hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="#custom-form-root">
+          <span>Start Custom Design Brief</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link text-surface-cream-link hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="index.html#boutiques-section">
+          <span>Boutiques Across Mumbai</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+      </div>
+
+      <div class="p-6 bg-black/25 border-t border-gold-light-border/20 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <a href="tel:+912228988888" class="flex-1 text-center py-2.5 rounded-lg bg-surface-cream-light text-royal-maroon-dark font-label-button text-[12px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">call</span>
+            <span>Call Store</span>
+          </a>
+          <a href="https://wa.me/912268258888" target="_blank" class="flex-1 text-center py-2.5 rounded-lg bg-gold-radiant text-royal-maroon-dark font-label-button text-[12px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">chat</span>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN BESPOKE CONTENT ROOT                                                 -->
+  <!-- ========================================================================= -->
+  <main class="w-full pt-28 bg-surface min-h-[calc(100vh-280px)]">
+    <div class="flex flex-col w-full">
+
+      <!-- Subtle Filigree Header Accent -->
+      <div class="w-full bg-surface-champagne-subtle/60 py-2.5 px-margin border-b border-gold-light-border/30">
+        <div class="max-w-6xl mx-auto flex items-center justify-between text-xs font-body-sm text-text-muted">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-gold-radiant animate-pulse"></span>
+            <span class="tracking-wide">Atelier Bespoke Lounge • Private Appointments Available Across Mumbai</span>
+          </div>
+          <div class="hidden sm:flex items-center gap-4 text-royal-maroon-base font-semibold">
+            <span class="material-symbols-outlined text-[15px] text-gold-radiant">workspace_premium</span>
+            <span>Every Creation Hallmarked HUID 916 &amp; IGI Certified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section class="relative w-full overflow-hidden bg-gradient-to-b from-canvas-cream via-surface-cream-light to-surface py-space-2xl px-margin">
+        <div class="max-w-5xl mx-auto flex flex-col items-center text-center relative z-10">
+          
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-champagne-subtle shadow-sm mb-6 border border-gold-light-border/40">
+            <span class="material-symbols-outlined text-gold-radiant text-[16px]">draw</span>
+            <span class="font-label-eyebrow text-label-eyebrow text-royal-maroon-dark uppercase tracking-widest font-bold">Atelier Om Jewellers</span>
+          </div>
+
+          <h1 class="font-headline-lg text-[36px] md:text-[54px] md:leading-[62px] text-royal-maroon-dark max-w-4xl tracking-tight mb-4">
+            A Jewellery Piece, Made Uniquely Yours.
+          </h1>
+          <p class="font-subheading text-[18px] md:text-[22px] text-on-surface-variant max-w-2xl mb-8 font-light italic">
+            Your Story. Your Style. Your Jewellery.
+          </p>
+
+          <div class="flex items-center justify-center gap-3 w-64 mb-8 opacity-85">
+            <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-gold-antique to-transparent"></div>
+            <div class="w-2 h-2 rotate-45 bg-gold-radiant"></div>
+            <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-gold-antique to-transparent"></div>
+          </div>
+
+          <p class="font-body-md text-text-muted max-w-xl mb-10 leading-relaxed">
+            Whether recreating an ancestral heirloom, bringing a fleeting dream sketch into reality, or curating your forever bridal trousseau, our master artisans craft with pure intention and certified perfection.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4">
+            <button class="px-8 py-3.5 rounded-xl bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button uppercase tracking-wider hover:bg-royal-maroon-dark transition-all duration-300 shadow-[0_8px_24px_rgba(91,19,24,0.22)] flex items-center gap-2" onclick="document.getElementById('custom-form-root').scrollIntoView({behavior: 'smooth'})">
+              <span>Start Your Custom Design</span>
+              <span class="material-symbols-outlined text-[18px] text-gold-radiant">arrow_downward</span>
+            </button>
+            <a class="px-6 py-3.5 rounded-xl bg-surface-cream-light text-royal-maroon-base font-label-button text-label-button uppercase tracking-wider hover:bg-surface-champagne-subtle transition-all duration-300 shadow-sm border border-gold-light-border/40 flex items-center gap-2" href="https://wa.me/912268258888" target="_blank">
+              <span class="material-symbols-outlined text-[18px] text-gold-antique">chat</span>
+              <span>Talk to Head Designer</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-16 pt-8 w-full border-t border-gold-light-border/40 max-w-3xl">
+            <div class="flex flex-col items-center gap-1">
+              <span class="material-symbols-outlined text-gold-radiant text-[22px]">verified</span>
+              <span class="font-body-sm text-body-sm font-semibold text-royal-maroon-dark">Certified Purity</span>
+              <span class="text-[11px] text-text-muted">BIS HUID &amp; IGI Natural</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <span class="material-symbols-outlined text-gold-radiant text-[22px]">architecture</span>
+              <span class="font-body-sm text-body-sm font-semibold text-royal-maroon-dark">3D CAD Mockup</span>
+              <span class="text-[11px] text-text-muted">Visualise before crafting</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <span class="material-symbols-outlined text-gold-radiant text-[22px]">precision_manufacturing</span>
+              <span class="font-body-sm text-body-sm font-semibold text-royal-maroon-dark">Master Karigars</span>
+              <span class="text-[11px] text-text-muted">Generations of heritage</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <span class="material-symbols-outlined text-gold-radiant text-[22px]">sync_alt</span>
+              <span class="font-body-sm text-body-sm font-semibold text-royal-maroon-dark">Lifetime Buyback</span>
+              <span class="text-[11px] text-text-muted">100% Exchange guarantee</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- WHY CUSTOM SECTION (4 PILLARS) -->
+      <section class="w-full bg-surface py-space-2xl px-margin">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase tracking-widest block mb-2 font-bold">The Om Jewellers Promise</span>
+            <h2 class="font-headline-lg text-headline-lg text-royal-maroon-dark tracking-tight mb-4">
+              Not Just Jewellery. Something Made For You.
+            </h2>
+            <p class="font-body-md text-body-md text-text-muted leading-relaxed">
+              Mass-produced jewellery speaks to the crowd. Bespoke fine jewellery belongs only to your sacred milestones, capturing emotions in precious metal and fire.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-surface-cream-light p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-gold-light-border/30">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-surface-champagne-subtle flex items-center justify-center text-royal-maroon-base mb-6 group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-[26px] text-gold-radiant">lightbulb</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-3">Designed around your vision</h3>
+                <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+                  Every curve, stone setting, and profile is built strictly around your dreams, references, and personal aesthetic.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-gold-light-border/30 flex items-center gap-1.5 text-royal-maroon-base font-label-eyebrow text-label-eyebrow uppercase font-bold">
+                <span>01 Unique Concept</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-cream-light p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-gold-light-border/30">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-surface-champagne-subtle flex items-center justify-center text-royal-maroon-base mb-6 group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-[26px] text-gold-radiant">palette</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-3">Personalised to your style</h3>
+                <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+                  Tailor gold karatage, metal hue, diamonds, and precious gemstones precisely to your skin tone, comfort, and occasion.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-gold-light-border/30 flex items-center gap-1.5 text-royal-maroon-base font-label-eyebrow text-label-eyebrow uppercase font-bold">
+                <span>02 Custom Finish</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-cream-light p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-gold-light-border/30">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-surface-champagne-subtle flex items-center justify-center text-royal-maroon-base mb-6 group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-[26px] text-gold-radiant">diamond</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-3">Crafted with care</h3>
+                <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+                  Generations of master karigars in our proprietary workshops bring flawless manual setting and hand-carved perfection.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-gold-light-border/30 flex items-center gap-1.5 text-royal-maroon-base font-label-eyebrow text-label-eyebrow uppercase font-bold">
+                <span>03 Master Karigars</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-cream-light p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-gold-light-border/30">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-surface-champagne-subtle flex items-center justify-center text-royal-maroon-base mb-6 group-hover:scale-105 transition-transform">
+                  <span class="material-symbols-outlined text-[26px] text-gold-radiant">support_agent</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-3">Guided by experts</h3>
+                <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+                  From budget optimization to gemological appraisal, our veteran stylists provide transparent white-glove counsel.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-gold-light-border/30 flex items-center gap-1.5 text-royal-maroon-base font-label-eyebrow text-label-eyebrow uppercase font-bold">
+                <span>04 Advisory Care</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS (5-STEP PROCESS) -->
+      <section class="w-full bg-gradient-to-b from-surface via-surface-champagne-subtle/50 to-surface py-space-2xl px-margin border-y border-gold-light-border/30">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center max-w-xl mx-auto mb-16">
+            <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase tracking-widest block mb-2 font-bold">Seamless • Transparent • Pure</span>
+            <h2 class="font-headline-lg text-headline-lg text-royal-maroon-dark">How It Works</h2>
+            <p class="font-body-md text-body-md text-text-muted mt-2">Five effortless steps from your imagination to an heirloom treasure.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+            
+            <div class="bg-surface-cream-light p-6 rounded-xl shadow-md flex flex-col items-center text-center relative border border-gold-light-border/30">
+              <span class="w-10 h-10 rounded-full bg-royal-maroon-base text-surface-cream-light font-headline-sm text-headline-sm flex items-center justify-center mb-4 shadow-md">01</span>
+              <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-2">Tell Us Your Vision</h4>
+              <p class="font-body-sm text-body-sm text-text-muted">Share your style, desired ornaments, inspiration photos, or hand-drawn sketches.</p>
+              <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-full bg-surface-champagne-subtle items-center justify-center text-gold-radiant shadow-sm border border-gold-light-border/40">
+                <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-cream-light p-6 rounded-xl shadow-md flex flex-col items-center text-center relative border border-gold-light-border/30">
+              <span class="w-10 h-10 rounded-full bg-royal-maroon-base text-surface-cream-light font-headline-sm text-headline-sm flex items-center justify-center mb-4 shadow-md">02</span>
+              <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-2">Choose Your Details</h4>
+              <p class="font-body-sm text-body-sm text-text-muted">Select metals (18K/22K, Yellow, Rose, Platinum), diamonds, or rare gemstones.</p>
+              <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-full bg-surface-champagne-subtle items-center justify-center text-gold-radiant shadow-sm border border-gold-light-border/40">
+                <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-cream-light p-6 rounded-xl shadow-md flex flex-col items-center text-center relative border border-gold-light-border/30">
+              <span class="w-10 h-10 rounded-full bg-royal-maroon-base text-surface-cream-light font-headline-sm text-headline-sm flex items-center justify-center mb-4 shadow-md">03</span>
+              <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-2">Design &amp; Refine</h4>
+              <p class="font-body-sm text-body-sm text-text-muted">Review accurate 3D CAD renders and scale wax mockups with our master designers.</p>
+              <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-full bg-surface-champagne-subtle items-center justify-center text-gold-radiant shadow-sm border border-gold-light-border/40">
+                <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-cream-light p-6 rounded-xl shadow-md flex flex-col items-center text-center relative border border-gold-light-border/30">
+              <span class="w-10 h-10 rounded-full bg-royal-maroon-base text-surface-cream-light font-headline-sm text-headline-sm flex items-center justify-center mb-4 shadow-md">04</span>
+              <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-2">Craft Your Piece</h4>
+              <p class="font-body-sm text-body-sm text-text-muted">Skilled artisans cast, hand-set gems, and polish each facet to pristine hallmarked brilliance.</p>
+              <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-full bg-surface-champagne-subtle items-center justify-center text-gold-radiant shadow-sm border border-gold-light-border/40">
+                <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+              </div>
+            </div>
+
+            <div class="bg-surface-cream-light p-6 rounded-xl shadow-md flex flex-col items-center text-center relative border border-gold-light-border/30">
+              <span class="w-10 h-10 rounded-full bg-gold-antique text-surface-cream-light font-headline-sm text-headline-sm flex items-center justify-center mb-4 shadow-md">05</span>
+              <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-2">Make It Yours</h4>
+              <p class="font-body-sm text-body-sm text-text-muted">Collect in your bespoke satin casket at our boutique or enjoy insured doorstep delivery.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- INSPIRATION SHOWCASE -->
+      <section class="w-full bg-surface py-space-2xl px-margin">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+              <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase tracking-widest block mb-2 font-bold">Our Recent Bespoke Commissions</span>
+              <h2 class="font-headline-lg text-headline-lg text-royal-maroon-dark">Heirloom Inspiration</h2>
+            </div>
+            <p class="font-body-md text-body-md text-text-muted max-w-md mt-4 md:mt-0">
+              Each bespoke piece carries a narrative—from modern solitaire bands to monumental royal Jadau bridal necklaces.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="group relative overflow-hidden rounded-xl bg-surface-cream-light shadow-md flex flex-col border border-gold-light-border/30">
+              <div class="relative h-72 w-full overflow-hidden">
+                <img alt="Handcrafted Gold &amp; Diamond Necklace" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl1BtmPkDkutvNqltLOpb2w26JADA_lHTaIZFuJVAgmHn7SWBetYVx0hN2VLdF1Wm60Q6-ONeKOYAOzT_ZYHI-oQFAjsN1EH0OTDxAmgaRcM7dEp9ygQnFMBuG3eEPApK-4TdOlJGBcfxXD44T0746u9AUmeBcNyhSrzmxcXkt-yaGJxLrJBkkhKUWeWjruDzwNXGaglOsy3XLs1LLrA2eat7pX0z-e-Td23C9tlsEI24YD1XCKrut5xTfk912RVK5"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-royal-maroon-dark/70 via-transparent to-transparent opacity-80"></div>
+                <span class="absolute top-4 left-4 bg-royal-maroon-base text-surface-cream-light font-label-eyebrow text-[10px] tracking-widest px-3 py-1 rounded-full uppercase">Bridal Masterwork</span>
+              </div>
+              <div class="p-6 bg-surface-cream-light flex flex-col justify-between flex-1">
+                <div>
+                  <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-1">The Maya Antique Choker</h4>
+                  <p class="font-body-sm text-body-sm text-text-muted">Custom 22K yellow gold with unheated Burmese rubies and certified polki accents.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gold-light-border/20 flex items-center justify-between font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">
+                  <span>Crafting Time: 4 Weeks</span>
+                  <span class="text-royal-maroon-base font-bold">Custom Commission</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl bg-surface-cream-light shadow-md flex flex-col border border-gold-light-border/30">
+              <div class="relative h-72 w-full overflow-hidden">
+                <img alt="Bespoke Solitaire and Diamond Bangles" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5UJa7C2WT7mFXePFFHkqbFbgva4WYPy6cu9LVsYPnYrEtkIo_ohSMHVaZZWJTcsUeY8ozHrC8pP_SiWNpiB4TUvlVC0F3Awf-JDP9gxUPYaL0U39VNWf7VnJcmhlxwycBXFdrSi_3CAfa1wtQL-vXwRFl0FZM4R-OdgeE_ZMiYIwOpjxrFF1B81CA2lknRXptArv2HpJjl9dR-WE-0Fd9OB5NEsUzrfOP9hgCYWIM6DorVUQonCg6YEN1OBwuvZd2"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-royal-maroon-dark/70 via-transparent to-transparent opacity-80"></div>
+                <span class="absolute top-4 left-4 bg-royal-maroon-base text-surface-cream-light font-label-eyebrow text-[10px] tracking-widest px-3 py-1 rounded-full uppercase">Contemporary Fine</span>
+              </div>
+              <div class="p-6 bg-surface-cream-light flex flex-col justify-between flex-1">
+                <div>
+                  <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-1">Aria Diamond Kada Pair</h4>
+                  <p class="font-body-sm text-body-sm text-text-muted">Twin 18K rose gold hinged cuffs featuring EF-VVS certified natural diamonds.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gold-light-border/20 flex items-center justify-between font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">
+                  <span>Crafting Time: 3 Weeks</span>
+                  <span class="text-royal-maroon-base font-bold">Custom Commission</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl bg-surface-cream-light shadow-md flex flex-col border border-gold-light-border/30">
+              <div class="relative h-72 w-full overflow-hidden">
+                <img alt="Bespoke Solitaire Ring and Polki Set" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA72iZdktL3YPckjEFEq-3DS5x0k-4ufyvPNHCiQsuIH0spdoQoBUEcwsVDb3q7ZEgJqNpKhNGdZRPBWXXghAlpIsah9TSk-hCSuee6dGsNQajrTZZ12n7OerIqdliEt_UyI_bfK7tj1XEacb6uz-FFByMcWAkRle4lff0xC_j35c14SlEBy8jt7ddFAQEK_vt7u8vJNDZPuKDowqVSRoQJ7dhSbhKTKls-ZjKT-Q5AF6QDcv-ghKugaJossdrSWhZA"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-royal-maroon-dark/70 via-transparent to-transparent opacity-80"></div>
+                <span class="absolute top-4 left-4 bg-royal-maroon-base text-surface-cream-light font-label-eyebrow text-[10px] tracking-widest px-3 py-1 rounded-full uppercase">Heritage Trousseau</span>
+              </div>
+              <div class="p-6 bg-surface-cream-light flex flex-col justify-between flex-1">
+                <div>
+                  <h4 class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-1">Devyani Royal Rani Haar</h4>
+                  <p class="font-body-sm text-body-sm text-text-muted">Multi-layered gold beads with hand-enamelled meenakari pendant and Zambian emeralds.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gold-light-border/20 flex items-center justify-between font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">
+                  <span>Crafting Time: 5 Weeks</span>
+                  <span class="text-royal-maroon-base font-bold">Custom Commission</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- WhatsApp Concierge Pill -->
+          <div class="mt-12 p-8 rounded-xl bg-gradient-to-r from-surface-champagne-subtle via-surface-cream-light to-surface-champagne-subtle shadow-md flex flex-col md:flex-row items-center justify-between gap-6 border border-gold-light-border/30">
+            <div class="flex items-center gap-4 text-center md:text-left">
+              <span class="material-symbols-outlined text-gold-radiant text-[36px]">auto_awesome</span>
+              <div>
+                <h3 class="font-headline-md text-headline-md text-royal-maroon-dark">Have something specific in mind? Let's bring it to life.</h3>
+                <p class="font-body-sm text-body-sm text-text-muted">Chat instantly with our head jewellery designer or share your Pinterest board.</p>
+              </div>
+            </div>
+            <a class="px-6 py-3 rounded-full bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button uppercase tracking-wider flex items-center gap-2 hover:bg-royal-maroon-dark transition-all shadow-md shrink-0" href="https://wa.me/912268258888" target="_blank">
+              <span class="material-symbols-outlined text-[18px] text-gold-radiant">chat</span>
+              <span>WhatsApp Bespoke Concierge</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- THE INTERACTIVE 6-STEP CUSTOMISATION FORM                             -->
+      <!-- ===================================================================== -->
+      <section class="w-full bg-surface-champagne-subtle/40 py-space-2xl px-margin" id="custom-form-root">
+        <div class="max-w-4xl mx-auto">
+          
+          <div class="text-center max-w-xl mx-auto mb-12">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-cream-light text-royal-maroon-base font-label-eyebrow text-label-eyebrow uppercase tracking-widest shadow-sm mb-3 border border-gold-light-border/40 font-semibold">
+              <span class="material-symbols-outlined text-[14px] text-gold-radiant">edit_note</span>
+              <span>Bespoke Design Brief</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-royal-maroon-dark">Customise Your Jewellery</h2>
+            <p class="font-body-md text-body-md text-text-muted mt-2">Take a moment to share your preferences. We will prepare design sketches and material estimates tailored to you.</p>
+          </div>
+
+          <form class="space-y-12" id="bespoke-form" onsubmit="handleFormSubmit(event)">
+            
+            <!-- STEP 01: What would you like to create? -->
+            <div class="bg-surface-cream-light p-8 md:p-10 rounded-xl shadow-lg relative border border-gold-light-border/30">
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-gold-light-border/40">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button flex items-center justify-center font-bold">1</span>
+                  <div>
+                    <h3 class="font-headline-md text-headline-md text-royal-maroon-dark">What would you like to create?</h3>
+                    <p class="font-body-sm text-body-sm text-text-muted">Choose one or more items you wish to commission</p>
+                  </div>
+                </div>
+                <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">Step 01 of 06</span>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 mb-8" id="item-type-grid">
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">💍</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Ring</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Solitaire, Band, Cocktail</span>
+                </button>
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">👂</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Earrings</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Jhumkas, Studs, Drops</span>
+                </button>
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">📿</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Necklace</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Choker, Rani Haar, Chain</span>
+                </button>
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="text-2xl mb-1.5 group-hover:scale-110 transition-transform">✨</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Bracelet</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Tennis, Tennis Cuff, Charm</span>
+                </button>
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="material-symbols-outlined text-gold-radiant text-[26px] mb-1.5">circle</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Bangle</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Kada, Temple, Filigree</span>
+                </button>
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="material-symbols-outlined text-gold-radiant text-[26px] mb-1.5">auto_mode</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Pendant</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Mangalsutra, Initial, Locket</span>
+                </button>
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="material-symbols-outlined text-gold-radiant text-[26px] mb-1.5">layers</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Jewellery Set</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Complete Bridal Ensemble</span>
+                </button>
+                <button class="item-card flex flex-col items-center justify-center p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all text-center group cursor-pointer shadow-sm border border-gold-light-border/30" onclick="toggleSelectCard(this)" type="button">
+                  <span class="material-symbols-outlined text-gold-radiant text-[26px] mb-1.5">more_horiz</span>
+                  <span class="font-headline-sm text-sm text-on-surface">Something Else</span>
+                  <span class="text-[11px] text-text-muted mt-0.5">Brooch, Waistband, Nath</span>
+                </button>
+              </div>
+
+              <div class="pt-4 border-t border-gold-light-border/30">
+                <label class="block font-headline-sm text-sm text-royal-maroon-dark mb-3">What is it for?</label>
+                <div class="flex flex-wrap gap-2.5" id="occasion-pills">
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Engagement</button>
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Wedding</button>
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Anniversary</button>
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Birthday</button>
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Gift</button>
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Festive</button>
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Everyday Wear</button>
+                  <button class="occasion-pill px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Personal Milestone</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 02: What's your style? -->
+            <div class="bg-surface-cream-light p-8 md:p-10 rounded-xl shadow-lg relative border border-gold-light-border/30">
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-gold-light-border/40">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button flex items-center justify-center font-bold">2</span>
+                  <div>
+                    <h3 class="font-headline-md text-headline-md text-royal-maroon-dark">What's your style?</h3>
+                    <p class="font-body-sm text-body-sm text-text-muted">Select the mood and aesthetic that best represents your taste</p>
+                  </div>
+                </div>
+                <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">Step 02 of 06</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="style-grid">
+                <button class="style-card text-left p-5 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all shadow-sm flex flex-col justify-between border border-gold-light-border/30" onclick="selectSingleCard(this, '#style-grid')" type="button">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="font-headline-sm text-headline-sm text-royal-maroon-dark">Classic</span>
+                      <span class="material-symbols-outlined text-gold-radiant text-[20px]">stars</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Timeless designs and elegant detailing that remain iconic for decades.</p>
+                  </div>
+                  <span class="text-[11px] font-semibold text-gold-antique uppercase mt-3">Heritage Solitaires • Pearls</span>
+                </button>
+                <button class="style-card text-left p-5 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all shadow-sm flex flex-col justify-between border border-gold-light-border/30" onclick="selectSingleCard(this, '#style-grid')" type="button">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="font-headline-sm text-headline-sm text-royal-maroon-dark">Contemporary</span>
+                      <span class="material-symbols-outlined text-gold-radiant text-[20px]">flare</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Clean, modern and effortlessly sophisticated for everyday glamour.</p>
+                  </div>
+                  <span class="text-[11px] font-semibold text-gold-antique uppercase mt-3">Geometric • Sleek Bands</span>
+                </button>
+                <button class="style-card text-left p-5 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all shadow-sm flex flex-col justify-between border border-gold-light-border/30" onclick="selectSingleCard(this, '#style-grid')" type="button">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="font-headline-sm text-headline-sm text-royal-maroon-dark">Traditional</span>
+                      <span class="material-symbols-outlined text-gold-radiant text-[20px]">temple_hindu</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Inspired by rich Indian royal heritage, intricate filigree, and Temple motifs.</p>
+                  </div>
+                  <span class="text-[11px] font-semibold text-gold-antique uppercase mt-3">Kundan • Polki • Meena</span>
+                </button>
+                <button class="style-card text-left p-5 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all shadow-sm flex flex-col justify-between border border-gold-light-border/30" onclick="selectSingleCard(this, '#style-grid')" type="button">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="font-headline-sm text-headline-sm text-royal-maroon-dark">Minimal</span>
+                      <span class="material-symbols-outlined text-gold-radiant text-[20px]">panorama_fish_eye</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Understated pieces designed for everyday elegance, featherlight comfort.</p>
+                  </div>
+                  <span class="text-[11px] font-semibold text-gold-antique uppercase mt-3">Delicate Pendants • Stackables</span>
+                </button>
+                <button class="style-card text-left p-5 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all shadow-sm flex flex-col justify-between border border-gold-light-border/30" onclick="selectSingleCard(this, '#style-grid')" type="button">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="font-headline-sm text-headline-sm text-royal-maroon-dark">Statement</span>
+                      <span class="material-symbols-outlined text-gold-radiant text-[20px]">crown</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Distinctive, head-turning designs made to command attention at grand galas.</p>
+                  </div>
+                  <span class="text-[11px] font-semibold text-gold-antique uppercase mt-3">Grand Bridal Ensembles</span>
+                </button>
+                <button class="style-card text-left p-5 rounded-xl bg-surface hover:bg-surface-champagne-subtle transition-all shadow-sm flex flex-col justify-between border border-gold-light-border/30" onclick="selectSingleCard(this, '#style-grid')" type="button">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="font-headline-sm text-headline-sm text-royal-maroon-dark">I have my own design</span>
+                      <span class="material-symbols-outlined text-gold-radiant text-[20px]">upload_file</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-text-muted leading-relaxed">Upload or reference your exact idea, family drawing, or Pinterest photo.</p>
+                  </div>
+                  <span class="text-[11px] font-semibold text-royal-maroon-base uppercase mt-3 font-bold">Ready to Recreate</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 03: Choose your materials -->
+            <div class="bg-surface-cream-light p-8 md:p-10 rounded-xl shadow-lg relative border border-gold-light-border/30">
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-gold-light-border/40">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button flex items-center justify-center font-bold">3</span>
+                  <div>
+                    <h3 class="font-headline-md text-headline-md text-royal-maroon-dark">Choose your materials</h3>
+                    <p class="font-body-sm text-body-sm text-text-muted">Make it yours with pure gold, platinum, and diamonds</p>
+                  </div>
+                </div>
+                <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">Step 03 of 06</span>
+              </div>
+
+              <div class="space-y-6">
+                <div>
+                  <label class="block font-headline-sm text-sm text-royal-maroon-dark mb-2.5">Metal Preference</label>
+                  <div class="flex flex-wrap gap-2.5" id="metal-pills">
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#metal-pills')" type="button">Yellow Gold</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#metal-pills')" type="button">White Gold</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#metal-pills')" type="button">Rose Gold</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#metal-pills')" type="button">Platinum</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#metal-pills')" type="button">Not Sure</button>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block font-headline-sm text-sm text-royal-maroon-dark mb-2.5">Gold Purity</label>
+                  <div class="flex flex-wrap gap-2.5" id="purity-pills">
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#purity-pills')" type="button">18K (Ideal for Diamond Setting)</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#purity-pills')" type="button">22K (Classic Pure Gold)</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#purity-pills')" type="button">Not Sure</button>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block font-headline-sm text-sm text-royal-maroon-dark mb-2.5">Gemstones &amp; Diamonds</label>
+                  <div class="flex flex-wrap gap-2.5" id="stone-pills">
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Natural Diamonds</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Solitaire (1ct+)</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Polki / Jadau</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Coloured Gemstones</button>
+                    <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="togglePill(this)" type="button">Plain Gold</button>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-surface-champagne-subtle flex items-center gap-3 border border-gold-light-border/30">
+                  <span class="material-symbols-outlined text-gold-antique text-[22px]">info</span>
+                  <p class="font-body-sm text-body-sm text-text-muted">
+                    <strong class="text-royal-maroon-dark">Not sure yet? Don't worry.</strong> Our senior gemologists walk you through cut, clarity, and durability during your consultation to match your practical lifestyle.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 04: What's your budget? -->
+            <div class="bg-surface-cream-light p-8 md:p-10 rounded-xl shadow-lg relative border border-gold-light-border/30">
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-gold-light-border/40">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button flex items-center justify-center font-bold">4</span>
+                  <div>
+                    <h3 class="font-headline-md text-headline-md text-royal-maroon-dark">What's your budget?</h3>
+                    <p class="font-body-sm text-body-sm text-text-muted">What would you like to invest in your bespoke piece?</p>
+                  </div>
+                </div>
+                <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">Step 04 of 06</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5" id="budget-grid">
+                <button class="budget-card p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle text-left transition-all shadow-sm border border-gold-light-border/30" onclick="selectSingleCard(this, '#budget-grid')" type="button">
+                  <span class="block font-label-price text-label-price text-royal-maroon-dark">₹50,000 – ₹1 Lakh</span>
+                  <span class="text-xs text-text-muted">Everyday rings, light pendants</span>
+                </button>
+                <button class="budget-card p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle text-left transition-all shadow-sm border border-gold-light-border/30" onclick="selectSingleCard(this, '#budget-grid')" type="button">
+                  <span class="block font-label-price text-label-price text-royal-maroon-dark">₹1 – ₹2 Lakhs</span>
+                  <span class="text-xs text-text-muted">Diamond bands, delicate sets</span>
+                </button>
+                <button class="budget-card p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle text-left transition-all shadow-sm border border-gold-light-border/30" onclick="selectSingleCard(this, '#budget-grid')" type="button">
+                  <span class="block font-label-price text-label-price text-royal-maroon-dark">₹2 – ₹5 Lakhs</span>
+                  <span class="text-xs text-text-muted">Solitaire rings, gold kadas</span>
+                </button>
+                <button class="budget-card p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle text-left transition-all shadow-sm border border-gold-light-border/30" onclick="selectSingleCard(this, '#budget-grid')" type="button">
+                  <span class="block font-label-price text-label-price text-royal-maroon-dark">₹5 – ₹10 Lakhs</span>
+                  <span class="text-xs text-text-muted">Bridal chokers, high solitaire</span>
+                </button>
+                <button class="budget-card p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle text-left transition-all shadow-sm border border-gold-light-border/30" onclick="selectSingleCard(this, '#budget-grid')" type="button">
+                  <span class="block font-label-price text-label-price text-royal-maroon-dark">₹10 Lakhs+</span>
+                  <span class="text-xs text-text-muted">Grand heirloom trousseau &amp; polki</span>
+                </button>
+                <button class="budget-card p-4 rounded-xl bg-surface hover:bg-surface-champagne-subtle text-left transition-all shadow-sm border border-gold-light-border/30" onclick="selectSingleCard(this, '#budget-grid')" type="button">
+                  <span class="block font-label-price text-label-price text-royal-maroon-dark">I'd prefer to discuss</span>
+                  <span class="text-xs text-text-muted">Guidance based on design weight</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 05: Show us your inspiration -->
+            <div class="bg-surface-cream-light p-8 md:p-10 rounded-xl shadow-lg relative border border-gold-light-border/30">
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-gold-light-border/40">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button flex items-center justify-center font-bold">5</span>
+                  <div>
+                    <h3 class="font-headline-md text-headline-md text-royal-maroon-dark">Show us your inspiration</h3>
+                    <p class="font-body-sm text-body-sm text-text-muted">Have something in mind? Upload an image, sketch or reference piece</p>
+                  </div>
+                </div>
+                <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">Step 05 of 06</span>
+              </div>
+
+              <div class="p-8 rounded-xl bg-surface hover:bg-surface-champagne-subtle/50 transition-all text-center flex flex-col items-center justify-center cursor-pointer shadow-sm relative group mb-4 border-2 border-dashed border-gold-light-border/60" onclick="document.getElementById('file-upload').click()">
+                <input accept="image/png, image/jpeg, application/pdf" class="hidden" id="file-upload" onchange="handleFileSelect(this)" type="file"/>
+                <div class="w-14 h-14 rounded-full bg-surface-champagne-subtle flex items-center justify-center text-royal-maroon-base mb-3 group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[28px] text-gold-radiant">cloud_upload</span>
+                </div>
+                <span class="font-headline-sm text-headline-sm text-royal-maroon-dark mb-1">+ Upload Your Inspiration</span>
+                <span class="font-body-sm text-body-sm text-text-muted">Drag and drop here, or browse files</span>
+                <span class="text-[11px] text-outline mt-2">Supports JPG, PNG, PDF (Up to 15MB)</span>
+                <div class="mt-3 hidden font-label-eyebrow text-label-eyebrow text-royal-maroon-base font-bold" id="file-chosen-name"></div>
+              </div>
+
+              <p class="font-body-sm text-body-sm text-text-muted italic mb-6">
+                "It could be a jewellery piece you've seen, a sketch you've drawn, or simply something that captures the look you're after."
+              </p>
+
+              <div>
+                <label class="block font-headline-sm text-sm text-royal-maroon-dark mb-2">Design Notes &amp; Special Requests</label>
+                <textarea class="w-full bg-surface rounded-xl p-4 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-cream-light shadow-inner transition-all border border-gold-light-border/40 resize-none" placeholder="e.g. I love this design but would like it in yellow gold with a larger centre stone, suitable for wearing with sarees and western gowns." rows="3"></textarea>
+              </div>
+            </div>
+
+            <!-- STEP 06: Tell us a little about you -->
+            <div class="bg-surface-cream-light p-8 md:p-10 rounded-xl shadow-lg relative border border-gold-light-border/30">
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-gold-light-border/40">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button flex items-center justify-center font-bold">6</span>
+                  <div>
+                    <h3 class="font-headline-md text-headline-md text-royal-maroon-dark">Tell us a little about you</h3>
+                    <p class="font-body-sm text-body-sm text-text-muted">Almost there • Our senior atelier specialist will connect with you personally</p>
+                  </div>
+                </div>
+                <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase font-semibold">Step 06 of 06</span>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label class="block font-body-sm text-body-sm font-semibold text-royal-maroon-dark mb-1.5">Full Name *</label>
+                  <input class="w-full bg-surface rounded-lg px-4 py-3 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-cream-light shadow-sm transition-all border border-gold-light-border/40" placeholder="e.g. Ananya Mehta" required="" type="text"/>
+                </div>
+                <div>
+                  <label class="block font-body-sm text-body-sm font-semibold text-royal-maroon-dark mb-1.5">Mobile Number *</label>
+                  <input class="w-full bg-surface rounded-lg px-4 py-3 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-cream-light shadow-sm transition-all border border-gold-light-border/40" placeholder="+91 98200 XXXXX" required="" type="tel"/>
+                </div>
+                <div>
+                  <label class="block font-body-sm text-body-sm font-semibold text-royal-maroon-dark mb-1.5">Email Address</label>
+                  <input class="w-full bg-surface rounded-lg px-4 py-3 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-cream-light shadow-sm transition-all border border-gold-light-border/40" placeholder="ananya@example.com" type="email"/>
+                </div>
+                <div>
+                  <label class="block font-body-sm text-body-sm font-semibold text-royal-maroon-dark mb-1.5">Preferred Store Lounge</label>
+                  <select class="w-full bg-surface rounded-lg px-4 py-3 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-cream-light shadow-sm transition-all border border-gold-light-border/40">
+                    <option value="Borivali Flagship">Borivali Flagship &amp; Atelier Lounge</option>
+                    <option value="Mulund Salon">Mulund LBS Marg Lounge</option>
+                    <option value="Ghatkopar Lounge">Ghatkopar R City Lounge</option>
+                    <option value="Bandra Salon">Bandra Turner Road Salon</option>
+                    <option value="Virtual Video">Virtual Video Consultation (Global)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label class="block font-headline-sm text-sm text-royal-maroon-dark mb-2.5">Preferred Way to Connect</label>
+                <div class="flex flex-wrap gap-2.5" id="contact-method-pills">
+                  <button class="px-4 py-2 rounded-lg bg-royal-maroon-base text-surface-cream-light font-body-sm text-body-sm shadow-sm transition-all flex items-center gap-1.5" onclick="selectSinglePill(this, '#contact-method-pills')" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-gold-radiant">chat</span>
+                    <span>WhatsApp</span>
+                  </button>
+                  <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all flex items-center gap-1.5 border border-gold-light-border/30" onclick="selectSinglePill(this, '#contact-method-pills')" type="button">
+                    <span class="material-symbols-outlined text-[16px]">call</span>
+                    <span>Phone Call</span>
+                  </button>
+                  <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all flex items-center gap-1.5 border border-gold-light-border/30" onclick="selectSinglePill(this, '#contact-method-pills')" type="button">
+                    <span class="material-symbols-outlined text-[16px]">mail</span>
+                    <span>Email</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="mb-8">
+                <label class="block font-headline-sm text-sm text-royal-maroon-dark mb-2.5">Preferred Time</label>
+                <div class="flex flex-wrap gap-2.5" id="time-pills">
+                  <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#time-pills')" type="button">Morning (10 AM - 1 PM)</button>
+                  <button class="px-4 py-2 rounded-lg bg-royal-maroon-base text-surface-cream-light font-body-sm text-body-sm shadow-sm transition-all" onclick="selectSinglePill(this, '#time-pills')" type="button">Afternoon (1 PM - 5 PM)</button>
+                  <button class="px-4 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm shadow-sm hover:bg-surface-champagne-subtle transition-all border border-gold-light-border/30" onclick="selectSinglePill(this, '#time-pills')" type="button">Evening (5 PM - 8 PM)</button>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-gold-light-border/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2 text-text-muted text-xs">
+                  <span class="material-symbols-outlined text-gold-radiant text-[16px]">lock</span>
+                  <span>Your privacy is revered. No spam. Pure bespoke attention.</span>
+                </div>
+                <button class="w-full sm:w-auto px-10 py-4 rounded-xl bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button uppercase tracking-wider hover:bg-royal-maroon-dark transition-all duration-300 shadow-[0_10px_25px_rgba(91,19,24,0.25)] flex items-center justify-center gap-2" type="submit">
+                  <span>Submit Your Custom Jewellery Brief</span>
+                  <span class="material-symbols-outlined text-[18px] text-gold-radiant">send</span>
+                </button>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- CONFIRMATION MODAL -->
+      <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-royal-maroon-dark/60 backdrop-blur-sm hidden transition-opacity duration-300" id="confirmation-modal">
+        <div class="bg-surface-cream-light rounded-2xl p-8 md:p-12 max-w-lg w-full text-center relative shadow-2xl border border-gold-radiant/40">
+          <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-champagne-subtle flex items-center justify-center text-text-muted hover:text-royal-maroon-dark" onclick="closeConfirmationModal()">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+          
+          <div class="w-16 h-16 rounded-full bg-surface-champagne-subtle flex items-center justify-center mx-auto mb-6 text-royal-maroon-base shadow-sm">
+            <span class="material-symbols-outlined text-[36px] text-gold-radiant">verified</span>
+          </div>
+          
+          <span class="font-label-eyebrow text-label-eyebrow text-gold-antique uppercase tracking-widest block mb-2 font-bold">Om Jewellers Bespoke Atelier</span>
+          <h3 class="font-headline-lg text-[28px] text-royal-maroon-dark mb-4">Your idea is now with our experts.</h3>
+          <p class="font-body-md text-body-md text-text-muted mb-6 leading-relaxed">
+            Thank you for sharing your vision with us. A member of the Om Jewellers team will connect with you to understand your requirements and take your design forward.
+          </p>
+          
+          <div class="p-4 rounded-xl bg-surface-champagne-subtle mb-8 text-left flex items-start gap-3 border border-gold-light-border/40">
+            <span class="material-symbols-outlined text-gold-radiant text-[22px] mt-0.5">event_upcoming</span>
+            <div>
+              <span class="font-body-sm text-body-sm font-semibold text-royal-maroon-dark block">Your next step: Personalised Design Consultation</span>
+              <span class="font-body-sm text-[12px] text-text-muted leading-tight">We are preparing initial CAD ideas and karatage breakdowns for our conversation.</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-col gap-3">
+            <a class="w-full py-3.5 rounded-xl bg-royal-maroon-base text-surface-cream-light font-label-button text-label-button uppercase tracking-wider hover:bg-royal-maroon-dark transition-all shadow-md flex items-center justify-center gap-2" href="https://wa.me/912268258888" target="_blank">
+              <span class="material-symbols-outlined text-[18px] text-gold-radiant">chat</span>
+              <span>Connect on WhatsApp Concierge</span>
+            </a>
+            <a class="w-full py-3 rounded-xl bg-surface text-on-surface font-label-button text-label-button uppercase tracking-wider hover:bg-surface-champagne-subtle transition-all text-center border border-gold-light-border/30" href="index.html#collections-section">
+              Explore Our Signature Collections
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="w-full bg-[#4E1D0D] text-[#EADBCC] pt-14 pb-12 border-t border-gold-light-border/30">
+    <div class="max-w-7xl mx-auto px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 pb-10">
+        
+        <div class="lg:col-span-4 flex flex-col items-start gap-6">
+          <a class="block" href="index.html" aria-label="Om Jewellers Home">
+            <img alt="Om Jewellers Official Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vm0kFwPfchjD2RQqRYSGcryvCtyJwUEM34F8YL4aH8cCtCg8vFIuvCUOnJGbPQ4Y6vmI4hhKl4thNGcWzW3G9NQiSgDv7waTXh-50RCHfD4MdAnNMpIYI-k2r_K0TQ6yyAoZ526ZKeVB68C8tzBrsO84E___pG2rUR9mfYPx_8Dc1im18q-eueh0yxLUAxZWADPP1JX-DYsJ7Jo7CLQ0yID3mu1gLoKIfOxGOOtHCj7bNmavDUG8gCnA"/>
+          </a>
+          <p class="font-body-sm text-[13px] text-[#C7B5A7] leading-relaxed max-w-sm">
+            Epitome of modern royal jewellery heritage in Mumbai. Specializing in hallmarked 916 gold temple ornaments, certified natural diamonds, uncut polki, and bespoke atelier creations.
+          </p>
+          <div class="flex items-center gap-3">
+            <a aria-label="Facebook" class="w-8 h-8 rounded bg-surface-cream-light text-[#4E1D0D] flex items-center justify-center font-bold text-[14px] hover:bg-gold-radiant transition-colors" href="https://facebook.com" target="_blank" rel="noopener noreferrer">f</a>
+            <a aria-label="LinkedIn" class="w-8 h-8 rounded bg-surface-cream-light text-[#4E1D0D] flex items-center justify-center font-bold text-[13px] hover:bg-gold-radiant transition-colors" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">in</a>
+            <a aria-label="YouTube" class="w-8 h-8 rounded bg-surface-cream-light text-[#4E1D0D] flex items-center justify-center hover:bg-gold-radiant transition-colors" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px]">play_arrow</span>
+            </a>
+            <a aria-label="Instagram" class="w-8 h-8 rounded bg-surface-cream-light text-[#4E1D0D] flex items-center justify-center hover:bg-gold-radiant transition-colors" href="https://instagram.com/om_jewellers" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px]">photo_camera</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-3">
+          <h3 class="font-headline-sm text-[20px] text-[#C5A059] tracking-wide font-normal">Home</h3>
+          <ul class="flex flex-col gap-2 font-body-sm text-[14px] text-[#EADBCC]">
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#campaign-spotlight">Om Story</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="customise.html">Atelier Customise</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#campaign-media-section">Media &amp; Blog</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="#custom-form-root">Bespoke FAQ</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="#custom-form-root">Contact Us</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#boutiques-section">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col gap-3">
+          <h3 class="font-headline-sm text-[20px] text-[#C5A059] tracking-wide font-normal">Products</h3>
+          <div class="grid grid-cols-2 gap-x-6 gap-y-2 font-body-sm text-[14px] text-[#EADBCC]">
+            <ul class="flex flex-col gap-2">
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Bangles</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Bridal Accessories</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Kadas</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Necklaces</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Pendant Sets</a></li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Bracelets</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Earrings</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Mangalsutras</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Pendants</a></li>
+              <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">Solitaire Rings</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-3">
+          <h3 class="font-headline-sm text-[20px] text-[#C5A059] tracking-wide font-normal">Policy</h3>
+          <ul class="flex flex-col gap-2 font-body-sm text-[14px] text-[#EADBCC]">
+            <li><a class="hover:text-gold-radiant transition-colors" href="#">Terms &amp; Conditions</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="#">Privacy Policy</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="#">Refund &amp; Cancellation</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="#">Shipping &amp; Insurance</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#6E2E19] flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-[12px] text-[#C7B5A7]">
+        <div>© 2025 Om Jewellers. All Rights Reserved.</div>
+        <div class="flex items-center gap-6">
+          <a class="hover:text-gold-radiant transition-colors" href="#">Jewellery Care Guide</a>
+          <span>•</span>
+          <a class="hover:text-gold-radiant transition-colors" href="#">BIS 916 Hallmark Licentiate</a>
+          <span>•</span>
+          <a class="hover:text-gold-radiant transition-colors" href="#">IGI / GIA Dossier Verify</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR BESPOKE FORM & DRAWER -->
+  <script>
+    function toggleSelectCard(el) {
+      if (el.classList.contains('bg-royal-maroon-base')) {
+        el.classList.remove('bg-royal-maroon-base', 'text-surface-cream-light');
+        el.classList.add('bg-surface', 'text-on-surface');
+        const title = el.querySelector('.font-headline-sm');
+        if (title) title.classList.remove('text-surface-cream-light');
+      } else {
+        el.classList.remove('bg-surface', 'text-on-surface');
+        el.classList.add('bg-royal-maroon-base', 'text-surface-cream-light');
+        const title = el.querySelector('.font-headline-sm');
+        if (title) title.classList.add('text-surface-cream-light');
+      }
+    }
+
+    function togglePill(el) {
+      if (el.classList.contains('bg-royal-maroon-base')) {
+        el.classList.remove('bg-royal-maroon-base', 'text-surface-cream-light');
+        el.classList.add('bg-surface', 'text-on-surface');
+      } else {
+        el.classList.remove('bg-surface', 'text-on-surface');
+        el.classList.add('bg-royal-maroon-base', 'text-surface-cream-light');
+      }
+    }
+
+    function selectSinglePill(el, containerSelector) {
+      const container = document.querySelector(containerSelector);
+      if (!container) return;
+      const pills = container.querySelectorAll('button');
+      pills.forEach(p => {
+        p.classList.remove('bg-royal-maroon-base', 'text-surface-cream-light');
+        p.classList.add('bg-surface', 'text-on-surface');
+      });
+      el.classList.remove('bg-surface', 'text-on-surface');
+      el.classList.add('bg-royal-maroon-base', 'text-surface-cream-light');
+    }
+
+    function selectSingleCard(el, containerSelector) {
+      const container = document.querySelector(containerSelector);
+      if (!container) return;
+      const cards = container.querySelectorAll('button');
+      cards.forEach(c => {
+        c.classList.remove('bg-royal-maroon-base', 'text-surface-cream-light');
+        c.classList.add('bg-surface');
+        const title = c.querySelector('.font-headline-sm, .font-label-price');
+        if (title) {
+          title.classList.remove('text-surface-cream-light');
+          title.classList.add('text-royal-maroon-dark');
+        }
+        const desc = c.querySelector('.text-text-muted');
+        if (desc) desc.classList.remove('text-surface-cream-light/80');
+      });
+      el.classList.remove('bg-surface');
+      el.classList.add('bg-royal-maroon-base');
+      const title = el.querySelector('.font-headline-sm, .font-label-price');
+      if (title) {
+        title.classList.remove('text-royal-maroon-dark');
+        title.classList.add('text-surface-cream-light');
+      }
+      const desc = el.querySelector('.text-text-muted');
+      if (desc) desc.classList.add('text-surface-cream-light/80');
+    }
+
+    function handleFileSelect(input) {
+      if (input.files && input.files[0]) {
+        const nameDisplay = document.getElementById('file-chosen-name');
+        nameDisplay.textContent = 'Selected: ' + input.files[0].name;
+        nameDisplay.classList.remove('hidden');
+      }
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const modal = document.getElementById('confirmation-modal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeConfirmationModal() {
+      const modal = document.getElementById('confirmation-modal');
+      modal.classList.add('hidden');
+    }
+
+    // Mobile Drawer Setup
+    document.addEventListener('DOMContentLoaded', () => {
+      const openBtn = document.getElementById('mobile-menu-open-btn');
+      const closeBtn = document.getElementById('mobile-menu-close-btn');
+      const drawer = document.getElementById('mobile-drawer');
+      const backdrop = document.getElementById('mobile-drawer-backdrop');
+      const panel = document.getElementById('mobile-drawer-panel');
+      const links = document.querySelectorAll('.mobile-nav-link');
+
+      if (!openBtn || !drawer || !backdrop || !panel) return;
+
+      function openDrawer() {
+        drawer.classList.remove('opacity-0', 'pointer-events-none');
+        drawer.classList.add('opacity-100', 'pointer-events-auto');
+        panel.classList.remove('-translate-x-full');
+        panel.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        drawer.classList.add('opacity-0', 'pointer-events-none');
+        drawer.classList.remove('opacity-100', 'pointer-events-auto');
+        panel.classList.add('-translate-x-full');
+        panel.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+      }
+
+      openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      backdrop.addEventListener('click', closeDrawer);
+      links.forEach(l => l.addEventListener('click', closeDrawer));
+    });
+  </script>
+</body>
+</html>
