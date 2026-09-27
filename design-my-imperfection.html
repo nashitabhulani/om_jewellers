@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design My Imperfection | Om Jewellers Bespoke Atelier</title>
+  <meta name="description" content="Turn your partner's quirks and your raw authenticity into a bespoke jewellery motif, setting style, and secret inner engraving. Om Jewellers Mumbai."/>
+  <meta name="keywords" content="Design My Imperfection, Custom Jewellery Mumbai, Marry Their Imperfections, Bespoke Ring Generator, Om Jewellers Atelier"/>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://omjewellers.com/wp-content/uploads/fbrfg/android-chrome-512x512.png"/>
+  <link rel="apple-touch-icon" href="https://omjewellers.com/wp-content/uploads/fbrfg/android-chrome-512x512.png"/>
+
+  <!-- Tailwind CSS via official CDN with exact design system extension -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "royal-maroon-dark": "#3D0C10",
+            "royal-maroon-base": "#5B1318",
+            "royal-maroon-soft": "#7E1F26",
+            "canvas-cream": "#FAF7F2",
+            "surface-cream-light": "#FDFBF7",
+            "surface-champagne-subtle": "#F5EFE6",
+            "gold-radiant": "#E5C378",
+            "gold-antique": "#C5A059",
+            "gold-shimmer-highlight": "#FFF2D9",
+            "gold-light-border": "#EADBCC",
+            "text-muted": "#6E6259",
+            "on-surface-variant": "#4E443B",
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', "serif"],
+            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+            "headline-lg": ['"Playfair Display"', "serif"],
+            "headline-md": ['"Playfair Display"', "serif"],
+            "headline-sm": ['"Playfair Display"', "serif"],
+            "body-lg": ['"Plus Jakarta Sans"', "sans-serif"],
+            "body-md": ['"Plus Jakarta Sans"', "sans-serif"],
+            "body-sm": ['"Plus Jakarta Sans"', "sans-serif"],
+            "label-eyebrow": ['"Plus Jakarta Sans"', "sans-serif"],
+            "label-button": ['"Plus Jakarta Sans"', "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF7F2;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A059;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5B1318;
+    }
+
+    /* Selected states for interactive options */
+    .option-card.selected,
+    .chip-btn.selected {
+      background-color: #5B1318 !important;
+      color: #FFFFFF !important;
+      border-color: #C5A059 !important;
+      box-shadow: 0 4px 14px rgba(91, 19, 24, 0.25) !important;
+    }
+    .option-card.selected *,
+    .chip-btn.selected * {
+      color: #FFFFFF !important;
+    }
+
+    .option-card.selected:hover,
+    .chip-btn.selected:hover {
+      background-color: #7E1F26 !important;
+      border-color: #E5C378 !important;
+    }
+
+    @keyframes pulseRing {
+      0% { transform: scale(0.98); opacity: 0.8; }
+      50% { transform: scale(1.02); opacity: 1; }
+      100% { transform: scale(0.98); opacity: 0.8; }
+    }
+    .pulse-glow {
+      animation: pulseRing 3s infinite ease-in-out;
+    }
+    main .rounded-2xl,
+    main .rounded-3xl,
+    main .rounded-xl {
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface-variant font-sans antialiased overflow-x-hidden pt-[104px]">
+
+  <!-- ========================================================================= -->
+  <!-- LUXURY FIXED HEADER WITH GOLD RATES TICKER AND RESPONSIVE NAVIGATION      -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 w-full z-50 shadow-md">
+    <!-- Top Gold Rate Ticker Bar -->
+    <div class="w-full bg-[#FFF9F0] border-b border-[#F0E6D8] py-2 px-4 text-center">
+      <div class="max-w-7xl mx-auto flex items-center justify-center">
+        <p class="font-serif text-[14px] md:text-[18px] text-[#5B1318] tracking-wide font-normal">
+          Today's Gold Rate &nbsp;|&nbsp; 
+          <span class="font-serif text-[13px] md:text-[15px] uppercase text-[#735C00] font-semibold">22K :</span> 
+          <span class="font-serif font-semibold text-[#5B1318]">Rs.13,910 per gm</span> &nbsp;|&nbsp; 
+          <span class="font-serif text-[13px] md:text-[15px] uppercase text-[#735C00] font-semibold">18K :</span> 
+          <span class="font-serif font-semibold text-[#5B1318]">Rs.11,795 per gm</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="w-full bg-[#822B2A] text-surface-cream-light py-4 px-4 border-b border-[#5E1B1B]">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-open-btn" aria-label="Open Navigation Menu" class="md:hidden p-2 text-surface-cream-light hover:text-gold-radiant transition-colors flex items-center justify-center rounded-lg hover:bg-white/10">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+
+        <!-- Desktop Navigation Links Left -->
+        <nav class="hidden md:flex items-center gap-6 font-serif text-[15px] tracking-wide">
+          <a class="text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html#pure-hero-carousel">About us</a>
+          <a class="cursor-pointer text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html#collections-section">Collections</a>
+          <a class="cursor-pointer text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="customise.html">Atelier Custom</a>
+          <a class="cursor-pointer text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html#bespoke-inquiry">Customer Service</a>
+        </nav>
+
+        <!-- Brand Logo -->
+        <div class="flex-shrink-0 mx-auto md:mx-0">
+          <a class="block" href="index.html" aria-label="Om Jewellers Homepage">
+            <img alt="Om Jewellers Logo" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vm0kFwPfchjD2RQqRYSGcryvCtyJwUEM34F8YL4aH8cCtCg8vFIuvCUOnJGbPQ4Y6vmI4hhKl4thNGcWzW3G9NQiSgDv7waTXh-50RCHfD4MdAnNMpIYI-k2r_K0TQ6yyAoZ526ZKeVB68C8tzBrsO84E___pG2rUR9mfYPx_8Dc1im18q-eueh0yxLUAxZWADPP1JX-DYsJ7Jo7CLQ0yID3mu1gLoKIfOxGOOtHCj7bNmavDUG8gCnA"/>
+          </a>
+        </div>
+
+        <!-- Navigation Right (Stores, Design My Imperfection, Featured, Search) -->
+        <div class="flex items-center gap-4 md:gap-6 font-serif">
+          <div class="hidden md:flex items-center gap-4 text-[15px] tracking-wide">
+            <a class="text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html#boutiques-section">Stores</a>
+            <a class="text-gold-radiant font-semibold transition-colors" href="design-my-imperfection.html">Design My Imperfection</a>
+            <a class="text-surface-cream-light hover:text-gold-radiant transition-colors font-medium" href="index.html#campaign-media-section">Featured</a>
+          </div>
+          
+          <!-- Search Input Box -->
+          <div class="relative flex items-center">
+            <input class="w-28 sm:w-36 md:w-44 bg-transparent border border-surface-cream-light/60 rounded-full pl-3 pr-8 py-2 font-serif text-[13px] md:text-[14px] text-surface-cream-light placeholder:text-surface-cream-light/80 focus:outline-none focus:border-gold-radiant focus:ring-1 focus:ring-gold-radiant transition-all" placeholder="Search jewellery..." type="text"/>
+            <button aria-label="Search" class="material-symbols-outlined text-[18px] text-surface-cream-light absolute right-3 hover:text-gold-radiant transition-colors">search</button>
+          </div>
+
+          <a href="https://wa.me/912268258888" target="_blank" aria-label="Chat on WhatsApp" class="md:hidden p-1.5 text-gold-radiant hover:text-surface-cream-light transition-colors">
+            <span class="material-symbols-outlined text-[24px]">chat</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MOBILE SLIDE-OUT LUXURY DRAWER NAVIGATION                                 -->
+  <!-- ========================================================================= -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0" aria-hidden="true">
+    <div id="mobile-drawer-backdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"></div>
+    <div id="mobile-drawer-panel" class="absolute top-0 left-0 bottom-0 w-[82%] max-w-sm bg-gradient-to-b from-[#3D0C10] via-[#5B1318] to-[#3D0C10] text-surface-cream-light shadow-2xl flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-out z-10 overflow-y-auto">
+      
+      <div class="p-6 border-b border-gold-light-border/30 flex items-center justify-between">
+        <img alt="Om Jewellers Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vm0kFwPfchjD2RQqRYSGcryvCtyJwUEM34F8YL4aH8cCtCg8vFIuvCUOnJGbPQ4Y6vmI4hhKl4thNGcWzW3G9NQiSgDv7waTXh-50RCHfD4MdAnNMpIYI-k2r_K0TQ6yyAoZ526ZKeVB68C8tzBrsO84E___pG2rUR9mfYPx_8Dc1im18q-eueh0yxLUAxZWADPP1JX-DYsJ7Jo7CLQ0yID3mu1gLoKIfOxGOOtHCj7bNmavDUG8gCnA"/>
+        <button id="mobile-menu-close-btn" aria-label="Close Navigation Menu" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-surface-cream-light flex items-center justify-center transition-colors">
+          <span class="material-symbols-outlined text-[22px]">close</span>
+        </button>
+      </div>
+
+      <div class="px-6 py-6 flex flex-col gap-5 font-headline-sm text-[17px]">
+        <a class="mobile-nav-link text-surface-cream-light hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="index.html">
+          <span>Home &amp; Bridal Heritage</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link text-gold-radiant font-semibold flex items-center justify-between py-1 transition-colors border-b border-white/10" href="design-my-imperfection.html">
+          <div class="flex items-center gap-2">
+            <span>Design My Imperfection (Tool)</span>
+            <span class="text-[10px] bg-gold-radiant text-royal-maroon-dark px-1.5 py-0.5 rounded font-bold uppercase">Active</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">auto_awesome</span>
+        </a>
+        <a class="mobile-nav-link text-surface-cream-light hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="index.html#ugc-imperfection-wall">
+          <span>The Imperfection Wall</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">favorite</span>
+        </a>
+        <a class="mobile-nav-link text-surface-cream-light hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="customise.html">
+          <span>Atelier Custom Jewellery</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link text-surface-cream-light hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="index.html#collections-section">
+          <span>Signature Collections</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link text-surface-cream-link hover:text-gold-radiant flex items-center justify-between py-1 transition-colors border-b border-white/10" href="index.html#boutiques-section">
+          <span>Boutiques Across Mumbai</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-radiant">chevron_right</span>
+        </a>
+      </div>
+
+      <div class="p-6 bg-black/25 border-t border-gold-light-border/20 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <a href="tel:+912228988888" class="flex-1 text-center py-2.5 rounded-lg bg-surface-cream-light text-royal-maroon-dark font-label-button text-[12px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">call</span>
+            <span>Call Store</span>
+          </a>
+          <a href="https://wa.me/912268258888" target="_blank" class="flex-1 text-center py-2.5 rounded-lg bg-gold-radiant text-royal-maroon-dark font-label-button text-[12px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">chat</span>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================= -->
+    <!-- HERO SECTION: THE PHILOSOPHY OF DESIGNING IMPERFECTION                     -->
+    <!-- ========================================================================= -->
+    <section class="relative border-b border-gold-light-border/50 bg-gradient-to-r from-gold-linear-start via-surface-cream-light to-gold-linear-end">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-8 pb-14">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-high text-royal-maroon-base font-sans text-[11px] uppercase tracking-[0.18em] shadow-sm">
+            <span class="material-symbols-outlined text-[14px] text-gold-antique">diamond</span>
+            Atelier Bespoke Commission
+          </span>
+          <span class="text-gold-antique/60 text-xs">/</span>
+          <span class="font-sans text-[12px] text-text-muted">Marry Their Imperfections</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+          <div class="lg:col-span-8 space-y-5">
+            <h1 class="font-serif text-[34px] sm:text-[42px] md:text-[48px] leading-tight text-royal-maroon-dark font-semibold">
+              Design My <span class="italic text-gold-antique font-normal">Imperfection</span>
+            </h1>
+            <p class="font-serif italic text-[18px] sm:text-[20px] text-royal-maroon-soft max-w-2xl leading-relaxed">
+              Because true love doesn't seek symmetry. Turn the quirks and charming eccentricities you cherish into wearable, eternal heirloom jewellery.
+            </p>
+            <p class="font-sans text-[14px] text-text-muted max-w-2xl leading-relaxed">
+              Describe your partner, choose the shape and metal, then reveal a bespoke motif with a personal engraving.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex flex-col items-start lg:items-end space-y-3 pb-1">
+            <div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low shadow-sm border border-gold-light-border/40">
+              <div class="w-10 h-10 rounded-full bg-royal-maroon-dark text-gold-radiant flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[20px]">verified</span>
+              </div>
+              <div class="text-left">
+                <p class="font-sans text-[13px] text-royal-maroon-dark leading-tight font-semibold">BIS HUID 916 Guaranteed</p>
+                <p class="font-sans text-[11px] text-text-muted">Certified gemstones and precious metals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-4 my-9 max-w-md mx-auto opacity-75">
+          <div class="h-px bg-gold-antique/50 flex-1"></div>
+          <div class="rotate-45 w-2 h-2 bg-gold-antique"></div>
+          <div class="rotate-45 w-2 h-2 bg-gold-antique"></div>
+          <div class="h-px bg-gold-antique/50 flex-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE 3-STEP GENERATOR SECTION                                      -->
+    <!-- ========================================================================= -->
+    <section class="py-12 md:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="generator-root">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+      
+      <!-- Generator Interactive Box Container -->
+      <div class="lg:col-span-7 bg-surface-container-lowest rounded-lg p-5 sm:p-8 border border-gold-light-border shadow-[0_4px_20px_-2px_rgba(91,19,24,0.04),0_2px_6px_rgba(197,160,89,0.08)] relative overflow-hidden">
+        
+        <!-- Progress Bar -->
+        <div class="mb-10">
+          <div class="flex items-center justify-between text-[12px] sm:text-[13px] font-serif uppercase tracking-wider text-royal-maroon-base font-bold mb-2">
+            <span id="step-indicator-text">Question 1 of 3 • The Partner Quirk</span>
+            <span id="step-percent-text">33% Completed</span>
+          </div>
+          <div class="w-full h-2 bg-[#FAF5EE] rounded-full overflow-hidden border border-[#EADBCC]">
+            <div id="progress-bar-fill" class="h-full bg-gradient-to-r from-royal-maroon-base to-gold-antique transition-all duration-500" style="width: 33.33%;"></div>
+          </div>
+        </div>
+
+        <!-- ================= STEP 1: THE QUIRK ================= -->
+        <div id="step-1" class="step-panel space-y-6">
+          <div>
+            <span class="font-serif text-[12px] uppercase text-[#735C00] font-bold tracking-widest block mb-1">Step 01</span>
+            <h2 class="font-serif text-[26px] sm:text-[34px] text-royal-maroon-dark font-semibold leading-snug">
+              What is that one delightful imperfection or quirk about your partner?
+            </h2>
+            <p class="font-sans text-[14px] sm:text-[15px] text-text-muted mt-1">
+              Select one of our iconic campaign quirks or type your own raw confession below.
+            </p>
+          </div>
+
+          <!-- Quick Select Quirk Chips -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="quirk-preset-container">
+            <button type="button" class="chip-btn option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer selected" data-quirk="opposites" data-title="We are complete opposites in everything">
+              <div class="flex items-center gap-2 font-serif text-[16px] font-semibold text-royal-maroon-dark mb-1">
+                <span>🎭</span> <span>Polar Opposites</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-tight">We don't match on habits, routines, or tastes—yet we lock together perfectly.</p>
+            </button>
+
+            <button type="button" class="chip-btn option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer" data-quirk="cant-cook" data-title="Cannot cook or follow a recipe to save their life">
+              <div class="flex items-center gap-2 font-serif text-[16px] font-semibold text-royal-maroon-dark mb-1">
+                <span>🍳</span> <span>Kitchen Chaos</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-tight">Burns the toast, makes the tea wrong, but serves it with unconditional warmth.</p>
+            </button>
+
+            <button type="button" class="chip-btn option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer" data-quirk="unpunctual" data-title="Chronically late, yet always there when it counts">
+              <div class="flex items-center gap-2 font-serif text-[16px] font-semibold text-royal-maroon-dark mb-1">
+                <span>⏰</span> <span>Chronically Unpunctual</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-tight">Can never be on time for dinner, but never hesitates when my world is falling apart.</p>
+            </button>
+
+            <button type="button" class="chip-btn option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer" data-quirk="lost-maps" data-title="Zero sense of direction, but always finds the way home">
+              <div class="flex items-center gap-2 font-serif text-[16px] font-semibold text-royal-maroon-dark mb-1">
+                <span>🧭</span> <span>Hopelessly Directionless</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-tight">Gets lost on familiar roads, yet remains my ultimate emotional compass in life.</p>
+            </button>
+          </div>
+
+          <!-- Custom Quirk Text Input -->
+          <div class="pt-2">
+            <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-1" for="custom-quirk-input">
+              Or write your own custom quirk / sentence:
+            </label>
+            <div class="relative">
+              <input type="text" id="custom-quirk-input" placeholder="e.g. He loses his car keys every single Sunday morning..." class="w-full px-4 py-3 rounded-xl border border-[#EADBCC] focus:outline-none focus:border-royal-maroon-base text-[15px] font-sans bg-white pr-10"/>
+              <span class="material-symbols-outlined text-[20px] text-gold-antique absolute right-3 top-3.5">edit</span>
+            </div>
+            <span class="text-[12px] text-text-muted font-serif mt-1 block">Our design algorithm adapts to custom wording automatically.</span>
+          </div>
+
+          <div class="pt-4 flex justify-end">
+            <button type="button" id="btn-goto-step-2" class="px-8 py-3 rounded-full bg-royal-maroon-base hover:bg-royal-maroon-dark text-surface-cream-light font-serif text-[15px] uppercase tracking-wider font-semibold shadow-md transition-all flex items-center gap-2">
+              <span>Next: What Keeps You Anchored</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 2: THE ANCHOR ================= -->
+        <div id="step-2" class="step-panel hidden space-y-6">
+          <div>
+            <span class="font-serif text-[12px] uppercase text-[#735C00] font-bold tracking-widest block mb-1">Step 02</span>
+            <h2 class="font-serif text-[26px] sm:text-[34px] text-royal-maroon-dark font-semibold leading-snug">
+              What emotional force anchors you both through this imperfection?
+            </h2>
+            <p class="font-sans text-[14px] sm:text-[15px] text-text-muted mt-1">
+              This emotional dynamic determines the tension, balance, and gemstone setting geometry of your motif.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="anchor-preset-container">
+            <button type="button" class="option-card p-5 rounded-2xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer selected" data-anchor="patience">
+              <div class="flex items-center gap-2 font-serif text-[17px] font-bold text-royal-maroon-dark mb-1">
+                <span>🕊️</span> <span>Unspoken Patience</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-relaxed">
+                Quiet calm that absorbs the chaos. One partner's storm is met with the other's deep, steady harbour.
+              </p>
+              <span class="inline-block mt-3 text-[11px] font-serif uppercase tracking-wider text-gold-antique font-semibold">Inspires: Tension Balance Setting</span>
+            </button>
+
+            <button type="button" class="option-card p-5 rounded-2xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer" data-anchor="laughter">
+              <div class="flex items-center gap-2 font-serif text-[17px] font-bold text-royal-maroon-dark mb-1">
+                <span>✨</span> <span>Shared Laughter &amp; Joy</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-relaxed">
+                Choosing to giggle through mistakes rather than take them seriously. Transforming flaws into running inside jokes.
+              </p>
+              <span class="inline-block mt-3 text-[11px] font-serif uppercase tracking-wider text-gold-antique font-semibold">Inspires: Organic Asymmetric Halo</span>
+            </button>
+
+            <button type="button" class="option-card p-5 rounded-2xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer" data-anchor="fierce">
+              <div class="flex items-center gap-2 font-serif text-[17px] font-bold text-royal-maroon-dark mb-1">
+                <span>🛡️</span> <span>Fierce Loyalty &amp; Pride</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-relaxed">
+                Standing up for each other's vulnerabilities. The outside world might judge; you wear it like royal armour.
+              </p>
+              <span class="inline-block mt-3 text-[11px] font-serif uppercase tracking-wider text-gold-antique font-semibold">Inspires: Interlocking Dual-Metal Band</span>
+            </button>
+
+            <button type="button" class="option-card p-5 rounded-2xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all duration-200 cursor-pointer" data-anchor="raw">
+              <div class="flex items-center gap-2 font-serif text-[17px] font-bold text-royal-maroon-dark mb-1">
+                <span>🌿</span> <span>Raw Unapologetic Truth</span>
+              </div>
+              <p class="font-sans text-[13px] text-text-muted leading-relaxed">
+                Zero pretense. Loving the unpolished, natural self over polished society masks.
+              </p>
+              <span class="inline-block mt-3 text-[11px] font-serif uppercase tracking-wider text-gold-antique font-semibold">Inspires: Rough-Hammered 22K Gold</span>
+            </button>
+          </div>
+
+          <div class="pt-4 flex items-center justify-between">
+            <button type="button" id="btn-back-step-1" class="px-6 py-2.5 rounded-full border border-[#EADBCC] text-royal-maroon-dark font-serif text-[14px] uppercase tracking-wider hover:bg-gray-100 transition-colors flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              <span>Back</span>
+            </button>
+            <button type="button" id="btn-goto-step-3" class="px-8 py-3 rounded-full bg-royal-maroon-base hover:bg-royal-maroon-dark text-surface-cream-light font-serif text-[15px] uppercase tracking-wider font-semibold shadow-md transition-all flex items-center gap-2">
+              <span>Next: Canvas &amp; Metal</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 3: CANVAS & METAL ================= -->
+        <div id="step-3" class="step-panel hidden space-y-6">
+          <div>
+            <span class="font-serif text-[12px] uppercase text-[#735C00] font-bold tracking-widest block mb-1">Step 03</span>
+            <h2 class="font-serif text-[26px] sm:text-[34px] text-royal-maroon-dark font-semibold leading-snug">
+              Select your preferred silhouette and precious metal pairing
+            </h2>
+            <p class="font-sans text-[14px] sm:text-[15px] text-text-muted mt-1">
+              Our master goldsmiths work with certified BIS 916 gold, Pt950 platinum, and natural certified diamonds.
+            </p>
+          </div>
+
+          <!-- Silhouette Selector -->
+          <div>
+            <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-2">Jewellery Silhouette</label>
+            <div class="grid grid-cols-3 gap-3" id="silhouette-container">
+              <button type="button" class="option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-center transition-all cursor-pointer selected" data-silhouette="ring">
+                <span class="material-symbols-outlined text-[26px] text-gold-antique block mb-1">circle</span>
+                <span class="font-serif text-[15px] font-bold text-royal-maroon-dark block">Ring / Band</span>
+                <span class="text-[11px] text-text-muted">Solitaire or Pair</span>
+              </button>
+              <button type="button" class="option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-center transition-all cursor-pointer" data-silhouette="pendant">
+                <span class="material-symbols-outlined text-[26px] text-gold-antique block mb-1">award_star</span>
+                <span class="font-serif text-[15px] font-bold text-royal-maroon-dark block">Pendant / Hasli</span>
+                <span class="text-[11px] text-text-muted">Close to the Heart</span>
+              </button>
+              <button type="button" class="option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-center transition-all cursor-pointer" data-silhouette="kada">
+                <span class="material-symbols-outlined text-[26px] text-gold-antique block mb-1">adjust</span>
+                <span class="font-serif text-[15px] font-bold text-royal-maroon-dark block">Kada / Cuff</span>
+                <span class="text-[11px] text-text-muted">Open Hinged Cuff</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Metal Choice -->
+          <div>
+            <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-2">Precious Metal Pairing</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="metal-container">
+              <button type="button" class="option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all cursor-pointer selected" data-metal="twotone">
+                <div class="font-serif text-[15px] font-bold text-royal-maroon-dark mb-0.5">Pt950 Platinum &amp; 18K Rose Gold</div>
+                <p class="font-sans text-[12px] text-text-muted">Two polar-opposite metals harmoniously cast together into one seamless piece.</p>
+              </button>
+
+              <button type="button" class="option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all cursor-pointer" data-metal="hammered-gold">
+                <div class="font-serif text-[15px] font-bold text-royal-maroon-dark mb-0.5">22K Hand-Hammered Royal Gold</div>
+                <p class="font-sans text-[12px] text-text-muted">Natural artisan anvil texture celebrating organic imperfections and warm reflection.</p>
+              </button>
+
+              <button type="button" class="option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all cursor-pointer" data-metal="polki">
+                <div class="font-serif text-[15px] font-bold text-royal-maroon-dark mb-0.5">Syndicate Uncut Polki Diamonds</div>
+                <p class="font-sans text-[12px] text-text-muted">Mughal-style uncut diamonds in their raw organic geometry, surrounded by gold foil.</p>
+              </button>
+
+              <button type="button" class="option-card p-4 rounded-xl border border-[#EADBCC] bg-[#FFFDF9] hover:bg-[#FAF5EE] text-left transition-all cursor-pointer" data-metal="solitaire">
+                <div class="font-serif text-[15px] font-bold text-royal-maroon-dark mb-0.5">Certified Solitaire with Asymmetric Pavé</div>
+                <p class="font-sans text-[12px] text-text-muted">VVS-EF brilliant round solitaire set with deliberate off-balance side flourishes.</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center justify-between">
+            <button type="button" id="btn-back-step-2" class="px-6 py-2.5 rounded-full border border-[#EADBCC] text-royal-maroon-dark font-serif text-[14px] uppercase tracking-wider hover:bg-gray-100 transition-colors flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              <span>Back</span>
+            </button>
+            <button type="button" id="btn-generate-motif" class="px-9 py-3.5 rounded-full bg-gradient-to-r from-gold-antique via-gold-radiant to-gold-antique text-royal-maroon-dark font-serif text-[15px] uppercase font-bold tracking-widest shadow-xl hover:scale-105 transition-all flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+              <span>Generate My Imperfection Motif</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= GENERATING ANIMATION SCREEN ================= -->
+        <div id="step-generating" class="step-panel hidden py-16 text-center space-y-6">
+          <div class="w-20 h-20 mx-auto rounded-full bg-royal-maroon-base text-gold-radiant flex items-center justify-center pulse-glow shadow-2xl border-2 border-gold-radiant">
+            <span class="material-symbols-outlined text-[40px] animate-spin">autorenew</span>
+          </div>
+          <div class="space-y-2">
+            <h3 class="font-serif text-[26px] text-royal-maroon-dark font-semibold" id="generating-status-text">
+              Translating Emotional Quirks...
+            </h3>
+            <p class="font-serif italic text-text-muted text-[16px]">
+              Calculating bespoke goldsmithing proportions &amp; custom engraving line pairing...
+            </p>
+          </div>
+        </div>
+
+        <!-- ================= STEP 4: THE BESPOKE REVEAL ================= -->
+        <div id="step-reveal" class="step-panel hidden space-y-8">
+          
+          <!-- Success Eyebrow & Congratulations -->
+          <div class="text-center max-w-2xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF5EE] text-[#781D1B] font-serif text-[12px] uppercase tracking-widest mb-2 border border-[#EADBCC]">
+              <span class="material-symbols-outlined text-[15px] text-gold-radiant">verified</span>
+              <span>Om Jewellers Bespoke Atelier Match</span>
+            </div>
+            <h2 class="font-serif text-[28px] sm:text-[38px] text-royal-maroon-dark font-semibold leading-tight" id="reveal-motif-title">
+              The Asymmetric Orbit Solitaire
+            </h2>
+            <p class="font-serif italic text-[16px] text-gold-antique font-semibold mt-1" id="reveal-motif-subtitle">
+              Crafted for: Polar Opposites • Anchored by Unspoken Patience
+            </p>
+          </div>
+
+          <!-- Main Visual Showcase & Spec Card -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-gradient-to-br from-[#FFFDF9] via-[#FAF7F2] to-[#FFFDF9] p-6 sm:p-8 rounded-2xl border border-[#C5A059] shadow-lg">
+            
+            <!-- Left: Visual Illustration / Emblem -->
+            <div class="lg:col-span-5 flex flex-col items-center justify-center text-center p-6 bg-white rounded-xl border border-[#EADBCC] shadow-inner relative overflow-hidden">
+              <div class="absolute top-2 left-2 text-[10px] font-serif uppercase tracking-wider text-royal-maroon-base font-bold bg-[#FAF5EE] px-2 py-0.5 rounded border border-[#EADBCC]">
+                Atelier Spec Sheet
+              </div>
+              <div class="w-48 h-48 sm:w-56 sm:h-56 relative flex items-center justify-center my-4" id="motif-visual-container">
+                <!-- Dynamic SVG Jewellery Graphic -->
+                <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-xl" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Outer Textured Ring -->
+                  <circle cx="100" cy="100" r="76" fill="none" stroke="#D4AF37" stroke-width="12" stroke-dasharray="2 3"/>
+                  <!-- Inner Polished Metal -->
+                  <circle cx="100" cy="100" r="66" fill="none" stroke="#E5E4E2" stroke-width="8"/>
+                  <!-- Interlocking Asymmetric Accent -->
+                  <circle cx="132" cy="74" r="18" fill="none" stroke="#5B1318" stroke-width="4"/>
+                  <!-- Center Brilliant Gemstone -->
+                  <polygon points="100,54 112,70 100,86 88,70" fill="#E5C378" stroke="#3D0C10" stroke-width="1"/>
+                  <circle cx="100" cy="70" r="4" fill="#FFFFFF"/>
+                  <!-- Star Shimmer Flashes -->
+                  <path d="M100 40 L102 46 L108 48 L102 50 L100 56 L98 50 L92 48 L98 46 Z" fill="#E5C378"/>
+                  <path d="M140 120 L141 124 L145 125 L141 126 L140 130 L139 126 L135 125 L139 124 Z" fill="#E5C378"/>
+                </svg>
+              </div>
+              <span class="font-serif text-[12px] uppercase text-[#735C00] tracking-widest font-bold">100% Bespoke Atelier Render</span>
+            </div>
+
+            <!-- Right: Philosophical Interpretation & Engraving -->
+            <div class="lg:col-span-7 space-y-5">
+              
+              <!-- Poetic Narrative -->
+              <div>
+                <h3 class="font-serif text-[14px] uppercase tracking-wider text-[#781D1B] font-bold mb-1.5 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[17px]">auto_stories</span>
+                  <span>Artisan Goldsmith Philosophy</span>
+                </h3>
+                <p class="font-serif text-[15px] sm:text-[16px] text-royal-maroon-dark leading-relaxed" id="reveal-narrative-text">
+                  Because you two are polar opposites, this piece intentionally pairs an unpolished raw-textured metal contour against a mirror-polished platinum bevel. They do not match in geometry, yet lock together in flawless structural tension.
+                </p>
+              </div>
+
+              <!-- Interactive Laser Ring Engraving Box -->
+              <div class="p-4 sm:p-5 rounded-xl bg-gradient-to-r from-[#3D0C10] via-[#5B1318] to-[#3D0C10] text-surface-cream-light border border-gold-radiant/50 shadow-md">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-serif text-[11px] uppercase tracking-widest text-gold-radiant font-bold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">edit_note</span>
+                    <span>Secret Inner Ring Engraving</span>
+                  </span>
+                  <span class="text-[10px] text-surface-cream-light/70 font-serif">Laser Inscribed Inside Shank</span>
+                </div>
+                
+                <div class="relative">
+                  <input type="text" id="reveal-engraving-input" value="✦ Opposites in Orbit • Forever Flawed ✦" class="w-full bg-black/40 border border-gold-radiant/40 rounded-lg px-3.5 py-2 text-gold-radiant font-serif italic text-[16px] sm:text-[18px] text-center tracking-wide focus:outline-none focus:border-gold-radiant"/>
+                </div>
+                <span class="text-[11px] text-surface-cream-light/60 font-serif block mt-1 text-center">Click text above to customize your secret engraving before consultation.</span>
+              </div>
+
+              <!-- Atelier Specs Details -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-center font-serif text-[12px]">
+                <div class="p-2 rounded bg-white border border-[#EADBCC]">
+                  <span class="text-text-muted block text-[10px] uppercase">Purity</span>
+                  <span class="font-bold text-royal-maroon-dark" id="spec-metal">Pt950 &amp; 18K Gold</span>
+                </div>
+                <div class="p-2 rounded bg-white border border-[#EADBCC]">
+                  <span class="text-text-muted block text-[10px] uppercase">Setting</span>
+                  <span class="font-bold text-royal-maroon-dark" id="spec-setting">Asymmetric Bezel</span>
+                </div>
+                <div class="p-2 rounded bg-white border border-[#EADBCC]">
+                  <span class="text-text-muted block text-[10px] uppercase">Lead Time</span>
+                  <span class="font-bold text-royal-maroon-dark">14 - 21 Days</span>
+                </div>
+                <div class="p-2 rounded bg-white border border-[#EADBCC]">
+                  <span class="text-text-muted block text-[10px] uppercase">Atelier ID</span>
+                  <span class="font-bold text-royal-maroon-dark" id="spec-code">OM-IMP-482</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Action Buttons Suite -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            
+            <a href="#consultation-booking" id="book-with-specs-btn" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-royal-maroon-base hover:bg-royal-maroon-dark text-surface-cream-light font-serif text-[15px] uppercase font-bold tracking-widest shadow-xl transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-[18px] text-gold-radiant">calendar_month</span>
+              <span>Consult Atelier Craftsman with this Design</span>
+            </a>
+
+            <button type="button" id="share-whatsapp-btn" class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white font-serif text-[14px] uppercase font-bold tracking-wider shadow-md transition-all flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.512 2 2 6.512 2 12.031c0 1.954.563 3.784 1.536 5.334L2 22l4.809-1.493a9.987 9.987 0 0 0 5.222 1.524c5.518 0 10.03-4.512 10.03-10.031 0-5.519-4.512-10.031-10.03-10.031zm0 18.258a8.21 8.21 0 0 1-4.223-1.168l-.303-.18-3.13.972.99-3.053-.198-.315A8.214 8.214 0 0 1 3.774 12.03c0-4.553 3.705-8.258 8.257-8.258 4.553 0 8.258 3.705 8.258 8.258 0 4.553-3.705 8.258-8.258 8.258zm4.526-6.183c-.248-.124-1.467-.724-1.695-.807-.228-.083-.394-.124-.56.124-.166.248-.642.807-.787.973-.145.166-.29.186-.538.062a6.762 6.762 0 0 1-1.992-1.229 7.464 7.464 0 0 1-1.38-1.722c-.145-.248-.016-.382.108-.506.112-.112.248-.29.373-.435.124-.145.166-.248.248-.415.083-.166.041-.31-.02-.435-.062-.124-.56-1.348-.767-1.846-.201-.486-.406-.42-.56-.428l-.477-.008c-.166 0-.435.062-.663.31-.228.248-.871.85-.871 2.073s.891 2.404 1.015 2.57c.124.166 1.753 2.678 4.248 3.756.593.256 1.056.409 1.417.524.597.19 1.14.163 1.57.099.479-.071 1.467-.6 1.674-1.18.207-.58.207-1.077.145-1.18-.062-.104-.228-.166-.476-.29z"/></svg>
+              <span>Share on WhatsApp</span>
+            </button>
+
+            <button type="button" id="restart-generator-btn" class="w-full sm:w-auto px-6 py-3.5 rounded-full border border-[#EADBCC] text-royal-maroon-dark hover:bg-gray-100 font-serif text-[14px] uppercase tracking-wider transition-all flex items-center justify-center gap-1.5">
+              <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+              <span>Try Another Quirk</span>
+            </button>
+
+          </div>
+
+          <!-- Share to Imperfection Wall Prompt -->
+          <div class="mt-8 p-5 rounded-xl bg-[#FAF5EE] border border-[#EADBCC] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+              <h4 class="font-serif text-[16px] font-bold text-royal-maroon-dark">Love this story concept?</h4>
+              <p class="font-sans text-[13px] text-text-muted">Post your quirk and this generated motif onto our public Imperfection Wall on the homepage.</p>
+            </div>
+            <a href="index.html#ugc-imperfection-wall" class="px-5 py-2 rounded-full bg-white hover:bg-gold-shimmer-highlight border border-[#C5A059] text-royal-maroon-base font-serif text-[13px] uppercase font-bold tracking-wider transition-colors shrink-0">
+              Post to Wall
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <aside class="lg:col-span-5 lg:sticky lg:top-28 space-y-5">
+        <div class="bg-gradient-to-br from-gold-linear-start to-gold-linear-end p-5 sm:p-7 rounded-lg border border-gold-light-border shadow-[0_4px_20px_-2px_rgba(91,19,24,0.04),0_2px_6px_rgba(197,160,89,0.08)]">
+          <span class="font-sans text-[10px] text-gold-antique uppercase tracking-[0.18em] font-bold">Private Atelier Brief</span>
+          <h2 class="font-serif text-[24px] sm:text-[28px] leading-tight text-royal-maroon-dark mt-2">A keepsake shaped by your story</h2>
+          <p class="font-sans text-[13px] text-text-muted leading-relaxed mt-3">Each detail you choose becomes part of a considered design direction for Om Jewellers' master karigars.</p>
+          <div class="aspect-[4/3] overflow-hidden rounded mt-5 bg-surface-container-low">
+            <img src="https://omjewellers.com/wp-content/uploads/2024/09/2.png" alt="Handcrafted rose gold kada" class="w-full h-full object-contain p-4"/>
+          </div>
+          <div class="grid grid-cols-2 gap-3 mt-5">
+            <div class="bg-surface-cream-light/80 p-3 border border-gold-light-border/50">
+              <span class="material-symbols-outlined text-[18px] text-gold-antique">verified</span>
+              <p class="font-sans text-[11px] font-semibold text-royal-maroon-dark mt-1">BIS 916 Gold</p>
+            </div>
+            <div class="bg-surface-cream-light/80 p-3 border border-gold-light-border/50">
+              <span class="material-symbols-outlined text-[18px] text-gold-antique">diamond</span>
+              <p class="font-sans text-[11px] font-semibold text-royal-maroon-dark mt-1">Natural Gemstones</p>
+            </div>
+          </div>
+        </div>
+        <p class="font-sans text-[11px] text-text-muted leading-relaxed px-1">Your selections stay on this page until you choose to share them with the atelier.</p>
+      </aside>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- REAL ATELIER REALIZATIONS: THREE ICONIC EXAMPLES                          -->
+    <!-- ========================================================================= -->
+    <section class="py-16 md:py-20 bg-[#FAF7F2] border-t border-[#EADBCC]/70">
+      <div class="max-w-7xl mx-auto px-4">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="font-serif text-[13px] uppercase text-[#735C00] font-bold tracking-widest block mb-1">From Quirk to Heirloom</span>
+          <h2 class="font-serif text-[28px] sm:text-[38px] text-royal-maroon-dark font-semibold">
+            How Real Couples Transformed Quirks Into Gold
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Case Study 1 -->
+          <div class="bg-white rounded-2xl p-6 border border-[#EADBCC] shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="aspect-square rounded-xl bg-gradient-to-b from-[#FFFDF9] to-[#FAF5EE] flex items-center justify-center p-6 border border-[#F0E6D8] mb-4">
+                <img src="https://omjewellers.com/wp-content/uploads/2024/09/2.png" alt="Rose Gold Kada" class="w-full h-full object-contain"/>
+              </div>
+              <span class="text-[11px] font-serif uppercase tracking-wider text-gold-antique font-semibold block mb-1">Quirk: "Zero Cooking Skills"</span>
+              <h3 class="font-serif text-[20px] text-royal-maroon-dark font-bold mb-2">The Unbroken Open Kada</h3>
+              <p class="font-sans text-[13px] text-text-muted leading-relaxed">
+                "She doesn't know how to cook, but she creates unconditional warmth." The groom commissioned an open-ended rose gold cuff with a single solitaire on one end, symbolizing an open, forgiving heart.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#F2E8DC] text-[12px] font-serif italic text-[#781D1B]">
+              Engraved: "My favorite chef forever • 2023"
+            </div>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="bg-white rounded-2xl p-6 border border-[#EADBCC] shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="aspect-square rounded-xl bg-gradient-to-b from-[#FFFDF9] to-[#FAF5EE] flex items-center justify-center p-6 border border-[#F0E6D8] mb-4">
+                <img src="https://omjewellers.com/wp-content/uploads/2024/09/16.png" alt="Two-Tone Engagement Ring" class="w-full h-full object-contain"/>
+              </div>
+              <span class="text-[11px] font-serif uppercase tracking-wider text-gold-antique font-semibold block mb-1">Quirk: "Polar Opposites"</span>
+              <h3 class="font-serif text-[20px] text-royal-maroon-dark font-bold mb-2">Two-Tone Interlocking Ring</h3>
+              <p class="font-sans text-[13px] text-text-muted leading-relaxed">
+                He is quiet logic; she is spontaneous joy. Our atelier fused Pt950 white platinum and 18K rose gold together under high-pressure fusion, creating a dual-metal shank crowned with a solitaire.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#F2E8DC] text-[12px] font-serif italic text-[#781D1B]">
+              Engraved: "We don't match, we fit • 2024"
+            </div>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="bg-white rounded-2xl p-6 border border-[#EADBCC] shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="aspect-square rounded-xl bg-gradient-to-b from-[#FFFDF9] to-[#FAF5EE] flex items-center justify-center p-6 border border-[#F0E6D8] mb-4">
+                <img src="https://omjewellers.com/wp-content/uploads/2024/09/4.png" alt="Connected Dual Finger Ring" class="w-full h-full object-contain"/>
+              </div>
+              <span class="text-[11px] font-serif uppercase tracking-wider text-gold-antique font-semibold block mb-1">Quirk: "Chaos in Harmony"</span>
+              <h3 class="font-serif text-[20px] text-royal-maroon-dark font-bold mb-2">Dual Blossom Hathphool Ring</h3>
+              <p class="font-sans text-[13px] text-text-muted leading-relaxed">
+                For a couple who thrive on chaotic highway road trips and spontaneous decisions, two floral rings were linked with cascading pearl and gold chains, symbolizing freedom within bond.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#F2E8DC] text-[12px] font-serif italic text-[#781D1B]">
+              Engraved: "Wild roads, one compass"
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- CONSULTATION BOOKING FORM WITH PRE-FILLED SPECS                           -->
+    <!-- ========================================================================= -->
+    <section class="py-16 md:py-24 bg-white border-t border-[#EADBCC]" id="consultation-booking">
+      <div class="max-w-4xl mx-auto px-4">
+        
+        <div class="text-center mb-10">
+          <span class="font-serif text-[13px] uppercase text-[#735C00] font-bold tracking-widest block mb-2">Om Jewellers Bespoke Atelier</span>
+          <h2 class="font-serif text-[28px] sm:text-[38px] text-royal-maroon-dark font-semibold">
+            Book Atelier Consultation For This Design
+          </h2>
+          <p class="font-serif italic text-text-muted text-[16px] max-w-xl mx-auto mt-2">
+            Sit with our master design consultants at Borivali, Bandra, Mulund, or Ghatkopar, or schedule a virtual video CAD session.
+          </p>
+        </div>
+
+        <div class="bg-[#FFFDF9] p-6 sm:p-10 rounded-3xl border border-[#EADBCC] shadow-xl">
+          
+          <form id="atelier-consultation-form" class="space-y-5">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-1" for="book-name">Your Full Name *</label>
+                <input type="text" id="book-name" required placeholder="e.g. Radhika Sharma" class="w-full px-4 py-3 rounded-xl border border-[#EADBCC] focus:outline-none focus:border-royal-maroon-base text-[14px] bg-white"/>
+              </div>
+              <div>
+                <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-1" for="book-phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="book-phone" required placeholder="e.g. +91 98200 12345" class="w-full px-4 py-3 rounded-xl border border-[#EADBCC] focus:outline-none focus:border-royal-maroon-base text-[14px] bg-white"/>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-1" for="book-boutique">Select Showroom / Mode *</label>
+                <select id="book-boutique" required class="w-full px-4 py-3 rounded-xl border border-[#EADBCC] focus:outline-none focus:border-royal-maroon-base text-[14px] bg-white">
+                  <option value="borivali">Borivali West (Flagship Atelier)</option>
+                  <option value="bandra">Bandra West (Waterfield Road)</option>
+                  <option value="mulund">Mulund West (LBS Marg)</option>
+                  <option value="ghatkopar">Ghatkopar East</option>
+                  <option value="virtual">Virtual Live Video Consultation (Zoom)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-1" for="book-date">Preferred Date *</label>
+                <input type="date" id="book-date" required class="w-full px-4 py-3 rounded-xl border border-[#EADBCC] focus:outline-none focus:border-royal-maroon-base text-[14px] bg-white"/>
+              </div>
+            </div>
+
+            <div>
+              <label class="block font-serif text-[13px] uppercase tracking-wider text-royal-maroon-dark font-semibold mb-1" for="book-notes">
+                Generated Design Specification &amp; Custom Engraving Notes
+              </label>
+              <textarea id="book-notes" rows="4" class="w-full px-4 py-3 rounded-xl border border-[#EADBCC] focus:outline-none focus:border-royal-maroon-base text-[14px] bg-white leading-relaxed">Motif: The Asymmetric Orbit Solitaire
+Theme: Polar Opposites in Orbit
+Inner Laser Inscription: ✦ "Opposites in Orbit • Forever Flawed" ✦
+Preferred Metal: Pt950 Platinum &amp; 18K Rose Gold</textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" id="book-submit-btn" class="w-full py-4 rounded-full bg-royal-maroon-base hover:bg-royal-maroon-dark text-surface-cream-light font-serif text-[16px] uppercase font-bold tracking-widest shadow-xl transition-all flex items-center justify-center gap-2">
+                <span>Confirm Atelier Appointment</span>
+                <span class="material-symbols-outlined text-[18px] text-gold-radiant">check_circle</span>
+              </button>
+            </div>
+
+            <div id="book-success-msg" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-center font-serif text-[15px]">
+              <span class="font-bold block text-[16px]">✦ Consultation Request Received! ✦</span>
+              Our Bespoke Master Concierge will reach out via WhatsApp &amp; Phone within 2 working hours to confirm your atelier schedule and prepare the 3D CAD preview.
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- LUXURY FOOTER                                                             -->
+  <!-- ========================================================================= -->
+  <footer class="bg-royal-maroon-dark text-surface-cream-light py-16 border-t border-gold-light-border/20">
+    <div class="max-w-7xl mx-auto px-4">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <div>
+          <a class="block mb-6" href="index.html">
+            <img alt="Om Jewellers Official Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vm0kFwPfchjD2RQqRYSGcryvCtyJwUEM34F8YL4aH8cCtCg8vFIuvCUOnJGbPQ4Y6vmI4hhKl4thNGcWzW3G9NQiSgDv7waTXh-50RCHfD4MdAnNMpIYI-k2r_K0TQ6yyAoZ526ZKeVB68C8tzBrsO84E___pG2rUR9mfYPx_8Dc1im18q-eueh0yxLUAxZWADPP1JX-DYsJ7Jo7CLQ0yID3mu1gLoKIfOxGOOtHCj7bNmavDUG8gCnA"/>
+          </a>
+          <p class="font-serif italic text-surface-dim text-[14px] leading-relaxed mb-6">
+            Four generations of trust, celebrating unscripted love and heirloom goldsmithing since 1999 across Mumbai.
+          </p>
+          <div class="flex items-center gap-3 text-gold-radiant">
+            <span class="text-[12px] font-serif uppercase tracking-widest text-surface-dim">Showrooms:</span>
+            <span class="text-[13px] font-serif">Borivali • Bandra • Mulund • Ghatkopar</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-[17px] text-gold-radiant mb-4 tracking-wider uppercase font-semibold">The Imperfection Project</h4>
+          <ul class="space-y-2.5 font-serif text-[15px] text-surface-cream-light/80">
+            <li><a class="hover:text-gold-radiant transition-colors" href="design-my-imperfection.html">Design My Imperfection (Tool)</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#ugc-imperfection-wall">The Imperfection Wall (Stories)</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#three-collections-section">Marry Their Imperfections Bridal</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#campaign-media-section">Cinema Ad &amp; Press Archives</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-[17px] text-gold-radiant mb-4 tracking-wider uppercase font-semibold">Bespoke Atelier</h4>
+          <ul class="space-y-2.5 font-serif text-[15px] text-surface-cream-light/80">
+            <li><a class="hover:text-gold-radiant transition-colors" href="customise.html">Custom Jewellery Atelier</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#collections-section">16 Signature Masterpieces</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#bespoke-inquiry">Book Atelier Consultation</a></li>
+            <li><a class="hover:text-gold-radiant transition-colors" href="index.html#boutiques-section">Visit Mumbai Boutiques</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-[17px] text-gold-radiant mb-4 tracking-wider uppercase font-semibold">Atelier Concierge</h4>
+          <div class="space-y-3 font-serif text-[14px] text-surface-cream-light/80">
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-gold-radiant text-[18px]">call</span>
+              <span>+91 22 6825 8888 / 2898 8888</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-gold-radiant text-[18px]">mail</span>
+              <span>concierge@omjewellers.com</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-gold-radiant text-[18px]">schedule</span>
+              <span>Mon - Sun: 11:00 AM - 8:30 PM</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-gold-light-border/10 flex flex-col md:flex-row items-center justify-between text-surface-dim font-serif text-[13px] gap-4">
+        <div>© 2026 Om Jewellers. All Rights Reserved.</div>
+        <div class="flex items-center gap-4 flex-wrap">
+          <span>BIS 916 Hallmarked</span>
+          <span>•</span>
+          <span>IGI &amp; GIA Certified Natural Diamonds</span>
+          <span>•</span>
+          <span>Pt950 Certified Platinum Guild</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT LOGIC CONTROLLER                                              -->
+  <!-- ========================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      /* --- 1. MOBILE DRAWER NAVIGATION --- */
+      const openBtn = document.getElementById('mobile-menu-open-btn');
+      const closeBtn = document.getElementById('mobile-menu-close-btn');
+      const drawer = document.getElementById('mobile-drawer');
+      const backdrop = document.getElementById('mobile-drawer-backdrop');
+      const panel = document.getElementById('mobile-drawer-panel');
+
+      function openDrawer() {
+        if (!drawer) return;
+        drawer.classList.remove('opacity-0', 'pointer-events-none');
+        drawer.classList.add('opacity-100', 'pointer-events-auto');
+        panel.classList.remove('-translate-x-full');
+        panel.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        if (!drawer) return;
+        drawer.classList.add('opacity-0', 'pointer-events-none');
+        drawer.classList.remove('opacity-100', 'pointer-events-auto');
+        panel.classList.add('-translate-x-full');
+        panel.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+      /* --- 2. MULTI-STEP GENERATOR CONTROLLER --- */
+      const step1 = document.getElementById('step-1');
+      const step2 = document.getElementById('step-2');
+      const step3 = document.getElementById('step-3');
+      const stepGenerating = document.getElementById('step-generating');
+      const stepReveal = document.getElementById('step-reveal');
+      const progressFill = document.getElementById('progress-bar-fill');
+      const stepIndicator = document.getElementById('step-indicator-text');
+      const stepPercent = document.getElementById('step-percent-text');
+
+      // State tracking
+      let selectedQuirk = 'opposites';
+      let quirkTitle = 'We are complete opposites in everything';
+      let selectedAnchor = 'patience';
+      let selectedSilhouette = 'ring';
+      let selectedMetal = 'twotone';
+
+      // Quirk chips selection
+      const quirkBtns = document.querySelectorAll('#quirk-preset-container .option-card');
+      const customQuirkInput = document.getElementById('custom-quirk-input');
+
+      quirkBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          quirkBtns.forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          selectedQuirk = btn.getAttribute('data-quirk');
+          quirkTitle = btn.getAttribute('data-title');
+          if (customQuirkInput) customQuirkInput.value = '';
+        });
+      });
+
+      if (customQuirkInput) {
+        customQuirkInput.addEventListener('input', () => {
+          if (customQuirkInput.value.trim().length > 0) {
+            quirkBtns.forEach(b => b.classList.remove('selected'));
+            selectedQuirk = 'custom';
+            quirkTitle = customQuirkInput.value.trim();
+          }
+        });
+      }
+
+      // Anchor options
+      const anchorBtns = document.querySelectorAll('#anchor-preset-container .option-card');
+      anchorBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          anchorBtns.forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          selectedAnchor = btn.getAttribute('data-anchor');
+        });
+      });
+
+      // Silhouette options
+      const silBtns = document.querySelectorAll('#silhouette-container .option-card');
+      silBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          silBtns.forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          selectedSilhouette = btn.getAttribute('data-silhouette');
+        });
+      });
+
+      // Metal options
+      const metalBtns = document.querySelectorAll('#metal-container .option-card');
+      metalBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          metalBtns.forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          selectedMetal = btn.getAttribute('data-metal');
+        });
+      });
+
+      // Step Navigation Handlers
+      document.getElementById('btn-goto-step-2').addEventListener('click', () => {
+        step1.classList.add('hidden');
+        step2.classList.remove('hidden');
+        progressFill.style.width = '66.66%';
+        stepIndicator.textContent = 'Question 2 of 3 • The Emotional Anchor';
+        stepPercent.textContent = '66% Completed';
+        window.scrollTo({ top: document.getElementById('generator-root').offsetTop - 120, behavior: 'smooth' });
+      });
+
+      document.getElementById('btn-back-step-1').addEventListener('click', () => {
+        step2.classList.add('hidden');
+        step1.classList.remove('hidden');
+        progressFill.style.width = '33.33%';
+        stepIndicator.textContent = 'Question 1 of 3 • The Partner Quirk';
+        stepPercent.textContent = '33% Completed';
+      });
+
+      document.getElementById('btn-goto-step-3').addEventListener('click', () => {
+        step2.classList.add('hidden');
+        step3.classList.remove('hidden');
+        progressFill.style.width = '100%';
+        stepIndicator.textContent = 'Question 3 of 3 • Canvas & Metal';
+        stepPercent.textContent = '100% Completed';
+        window.scrollTo({ top: document.getElementById('generator-root').offsetTop - 120, behavior: 'smooth' });
+      });
+
+      document.getElementById('btn-back-step-2').addEventListener('click', () => {
+        step3.classList.add('hidden');
+        step2.classList.remove('hidden');
+        progressFill.style.width = '66.66%';
+        stepIndicator.textContent = 'Question 2 of 3 • The Emotional Anchor';
+        stepPercent.textContent = '66% Completed';
+      });
+
+      // Generator Execution
+      document.getElementById('btn-generate-motif').addEventListener('click', () => {
+        step3.classList.add('hidden');
+        stepGenerating.classList.remove('hidden');
+
+        const statusEl = document.getElementById('generating-status-text');
+        setTimeout(() => { statusEl.textContent = 'Harmonizing Metal & Asymmetric Geometry...'; }, 400);
+        setTimeout(() => { statusEl.textContent = 'Curating Secret Laser Inner Inscription...'; }, 800);
+
+        setTimeout(() => {
+          stepGenerating.classList.add('hidden');
+          synthesizeResult();
+          stepReveal.classList.remove('hidden');
+          window.scrollTo({ top: document.getElementById('generator-root').offsetTop - 120, behavior: 'smooth' });
+        }, 1200);
+      });
+
+      // Result Synthesis Logic
+      function synthesizeResult() {
+        let motifTitle = "The Asymmetric Orbit Solitaire";
+        let motifSubtitle = `Crafted for: ${quirkTitle}`;
+        let narrative = "";
+        let engraving = `✦ Opposites in Orbit • 2026 ✦`;
+        let metalLabel = "Pt950 & 18K Rose Gold";
+        let settingLabel = "Asymmetric Bezel";
+
+        // Metal Label Mapping
+        if (selectedMetal === 'twotone') metalLabel = "Pt950 Platinum & 18K Rose Gold";
+        else if (selectedMetal === 'hammered-gold') metalLabel = "22K Hand-Hammered Gold";
+        else if (selectedMetal === 'polki') metalLabel = "Uncut Polki & 22K Gold Foil";
+        else metalLabel = "18K White Gold & Pavé Diamonds";
+
+        // Motif Generation by combinations
+        if (selectedQuirk === 'opposites' || selectedMetal === 'twotone') {
+          motifTitle = "The Dual-Tone Harmony Solitaire";
+          narrative = "Because you two are polar opposites, this piece intentionally pairs an unpolished raw-textured metal contour against a mirror-polished platinum bevel. They do not match in geometry, yet lock together in flawless structural tension.";
+          engraving = `✦ "We don't match, we fit" ✦`;
+          settingLabel = "Tension Interlock";
+        } else if (selectedQuirk === 'cant-cook') {
+          motifTitle = "The Open-Heart Hearth Band";
+          narrative = "Cooking is about domestic convention, but your love is about pure presence. This design uses an open-cuff silhouette studded with a hidden ruby on the inner band—a silent ode to the partner who warms the morning even when the toast is burnt.";
+          engraving = `✦ "Burnt toast & pure gold" ✦`;
+          settingLabel = "Concealed Inner Gem";
+        } else if (selectedQuirk === 'lost-maps') {
+          motifTitle = "The Compass Star Polki Hasli";
+          narrative = "Directionless on the road, yet infallible in the heart. This motif features an off-center syndicate uncut polki stone set within a subtle star-compass bezel that points naturally toward home.";
+          engraving = `✦ "Lost with you, home in you" ✦`;
+          settingLabel = "Star-Compass Bezel";
+        } else if (selectedQuirk === 'unpunctual') {
+          motifTitle = "The Dual-Time Interlocking Band";
+          narrative = "One is always early; the other is fashionably late. This design interlaces two separate rotating bands—one set 15 degrees ahead—so that no matter whose time you are on, you move through life in tandem.";
+          engraving = `✦ "Always worth the wait" ✦`;
+          settingLabel = "Dual Interlocking Ring";
+        } else {
+          // Custom quirk
+          motifTitle = "The Bespoke Raw-Truth Motif";
+          narrative = `Inspired directly by your partner's quirk: "${quirkTitle}". Our master artisans translate this unique trait into an organic handcrafted silhouette with asymmetric prongs that celebrate genuine, unpolished authenticity.`;
+          engraving = `✦ "Our Beautiful Chaos • 2026" ✦`;
+          settingLabel = "Custom Organic Prong";
+        }
+
+        // Silhouette adaptation
+        if (selectedSilhouette === 'pendant') {
+          motifTitle = motifTitle.replace('Band', 'Pendant').replace('Ring', 'Necklace').replace('Solitaire', 'Medallion');
+        } else if (selectedSilhouette === 'kada') {
+          motifTitle = motifTitle.replace('Band', 'Kada').replace('Ring', 'Cuff').replace('Solitaire', 'Kada');
+        }
+
+        // Update DOM
+        document.getElementById('reveal-motif-title').textContent = motifTitle;
+        document.getElementById('reveal-motif-subtitle').textContent = motifSubtitle;
+        document.getElementById('reveal-narrative-text').textContent = narrative;
+        document.getElementById('reveal-engraving-input').value = engraving;
+        document.getElementById('spec-metal').textContent = metalLabel;
+        document.getElementById('spec-setting').textContent = settingLabel;
+        document.getElementById('spec-code').textContent = 'OM-IMP-' + Math.floor(100 + Math.random() * 900);
+
+        // Pre-fill Consultation form notes below
+        const notesField = document.getElementById('book-notes');
+        if (notesField) {
+          notesField.value = `Motif: ${motifTitle}\nQuirk: ${quirkTitle}\nInner Laser Inscription: ${engraving}\nPreferred Metal Canvas: ${metalLabel}\nSilhouette: ${selectedSilhouette.toUpperCase()}`;
+        }
+      }
+
+      // Restart Generator
+      document.getElementById('restart-generator-btn').addEventListener('click', () => {
+        stepReveal.classList.add('hidden');
+        step1.classList.remove('hidden');
+        progressFill.style.width = '33.33%';
+        stepIndicator.textContent = 'Question 1 of 3 • The Partner Quirk';
+        stepPercent.textContent = '33% Completed';
+        window.scrollTo({ top: document.getElementById('generator-root').offsetTop - 120, behavior: 'smooth' });
+      });
+
+      // WhatsApp Share
+      document.getElementById('share-whatsapp-btn').addEventListener('click', () => {
+        const title = document.getElementById('reveal-motif-title').textContent;
+        const engraving = document.getElementById('reveal-engraving-input').value;
+        const text = encodeURIComponent(`Hello Om Jewellers, I just used the "Design My Imperfection" tool on your website!\n\nOur Generated Motif: ${title}\nQuirk: ${quirkTitle}\nCustom Inscription: ${engraving}\n\nI would love to discuss crafting this with your atelier master.`);
+        window.open(`https://wa.me/912268258888?text=${text}`, '_blank');
+      });
+
+      // Consultation Form Submit
+      const bookForm = document.getElementById('atelier-consultation-form');
+      const bookSuccess = document.getElementById('book-success-msg');
+      const bookBtn = document.getElementById('book-submit-btn');
+
+      if (bookForm) {
+        bookForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          bookBtn.disabled = true;
+          bookBtn.innerHTML = `<span>Securing Atelier Time...</span>`;
+
+          setTimeout(() => {
+            bookBtn.disabled = false;
+            bookBtn.innerHTML = `<span>Appointment Confirmed</span><span class="material-symbols-outlined text-[18px] text-gold-radiant">check_circle</span>`;
+            bookSuccess.classList.remove('hidden');
+            bookSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 800);
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>

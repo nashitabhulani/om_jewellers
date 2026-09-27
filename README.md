@@ -23,7 +23,7 @@ A modern, royal champagne-gold digital experience for **Om Jewellers** (Mumbai),
      6. *Client Details & Preferred Mumbai Salon Booking*.
    - Interactive confirmation modal with instant WhatsApp concierge follow-up.
 
-3. **Iconic Campaign Spotlight: "Marry Your Imperfections"**
+3. **Iconic Campaign Spotlight: "Marry Their Imperfections"**
    - Chapter 01: *"She Doesn't Know How to Cook"* (Bridal Polki).
    - Chapter 02: *"She Earns More Than Him"* (Solitaire Rings).
    - Chapter 03: *"She is Divorced"* (Heritage Bridal Sets).
